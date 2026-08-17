@@ -1,0 +1,4 @@
+- [x] Chỉnh sửa "02 - Spring Boot", thiếu giải thích cách chuyền các giá trị hoặc đối tượng ra view hoặc ngược lại nhận giá trị hoặc object từ view: model, param, RequestParam, ModelAttribute,.... ✅ 2026-08-17
+- [x] "07 - Front End programing/02 HTML" tạo md mới có bảng danh sách các statement hoặc lệnh "boot trap". ✅ 2026-08-17
+- [x] "Các cú pháp đặt tên truy vấn Derived Queries phổ biến" trong "02 - Spring Data JPA and Hibernate" chưa đầy đủ, cần chia ra thành 3 bảng "Nhóm điều kiện cơ bản", "Toán tử so sánh", "NULL", và "String". ✅ 2026-08-17
+- [ ] 
