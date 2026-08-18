@@ -1,5 +1,6 @@
 ## Checklist tổng
 - [x] Bổ sung giải thích + bảng truyền/nhận dữ liệu Controller ↔ View
+- [x] Convert toàn bộ file `.md` trong `02 - Spring Boot` → folder riêng, reset index từ 01 ✅ 2026-08-18
 
 ## Quy tắc áp dụng (tóm tắt)
 - **Chuẩn hóa đặt tên:** Sử dụng định dạng `{index} - {context}` cho thư mục và tệp tin.
@@ -16,9 +17,14 @@
 - Đã thay đổi:
   - `06 - Java Program/02 - Spring Boot/03 - Spring MVC Controllers.md` (Thêm phần Luồng truyền nhận dữ liệu, bảng tham chiếu 7 cơ chế binding: Model, ModelAndView, @RequestParam, @ModelAttribute, @PathVariable, @RequestBody, @ResponseBody, kèm ví dụ thực tế và sơ đồ Mermaid).
 
+### [2026-08-18 15:10]
+- Đã làm: Convert toàn bộ file `.md` lẻ trực tiếp dưới thư mục `02 - Spring Boot` thành các thư mục con riêng biệt trùng tên (bỏ index cũ). Reset index của các thư mục con bắt đầu từ `01`.
+- Đã thay đổi: Di chuyển các file `.md` vào thư mục tương ứng và đổi tên thành `01 - {context}.md`.
+
 ## Trạng thái hiện tại
-- Đã hoàn thành: 100% checklist (Bổ sung giải thích + bảng truyền/nhận dữ liệu Controller ↔ View).
+- Đã hoàn thành: 100% checklist.
 - Đang làm dở / chưa làm tới: Không có.
 
 ## Lưu ý
 - Đã bổ sung sơ đồ Mermaid mô tả trực quan luồng xử lý của `DispatcherServlet` cùng với `HandlerAdapter` và `Template Engine`.
+

@@ -140,7 +140,7 @@ public class InternationalizationApp {
             String welcomeStr = bundle.getString("welcome");
             String loginSuccessStr = bundle.getString("login.success");
             
-            System.out.println("Locale hiện tại: " + bundle.getLocale());
+            System.out.println("Locale hiện tại: "      + bundle.getLocale());
             System.out.println("Thông điệp chào mừng: " + welcomeStr);
             System.out.println("Thông điệp đăng nhập: " + loginSuccessStr);
             

@@ -7,15 +7,15 @@
 
 ## 1. Bảng tham chiếu các phương thức xử lý hình ảnh phổ biến
 
-| Lớp | Method / Statement | Definition | Tác dụng | Cách dùng / Phạm vi | Lưu ý |
-| --- | --- | --- | --- | --- | --- |
-| **ImageIO** | `ImageIO.read(File input)` | Đọc ảnh từ tệp | Tải ảnh từ đường dẫn tệp tin và trả về một đối tượng `BufferedImage`. | Đọc ảnh | Ném `IOException` nếu tệp lỗi hoặc không tìm thấy. |
-| **ImageIO** | `ImageIO.read(URL input)` | Đọc ảnh từ URL | Tải ảnh từ một địa chỉ web trực tuyến. | Đọc ảnh | Cần xử lý kết nối mạng và lỗi IO. |
-| **ImageIO** | `ImageIO.write(RenderedImage im, String format, File output)` | Ghi ảnh xuống đĩa | Lưu đối tượng ảnh xuống đĩa theo định dạng chỉ định (ví dụ: `"png"`, `"jpg"`). | Ghi ảnh | Định dạng viết thường (không phân biệt hoa thường). |
-| **BufferedImage** | `getWidth()` | Lấy chiều rộng | Trả về số lượng điểm ảnh theo chiều ngang. | Truy xuất thuộc tính | Trả về kiểu dữ liệu `int`. |
-| **BufferedImage** | `getHeight()` | Lấy chiều cao | Trả về số lượng điểm ảnh theo chiều dọc. | Truy xuất thuộc tính | Trả về kiểu dữ liệu `int`. |
-| **BufferedImage** | `getRGB(int x, int y)` | Lấy màu sắc điểm ảnh | Trả về mã màu dạng ARGB (Alpha-Red-Green-Blue) tại tọa độ `(x, y)`. | Xử lý điểm ảnh | Tọa độ tính từ `0` đến `width-1`/`height-1`. |
-| **BufferedImage** | `setRGB(int x, int y, int rgb)` | Thay đổi màu điểm ảnh | Gán mã màu ARGB mới cho điểm ảnh tại tọa độ `(x, y)`. | Xử lý điểm ảnh | Thay đổi trực tiếp trên đối tượng BufferedImage hiện tại. |
+| Lớp               | Method / Statement                                            | Definition            | Tác dụng                                                                       | Cách dùng / Phạm vi  | Lưu ý                                                     |
+| ----------------- | ------------------------------------------------------------- | --------------------- | ------------------------------------------------------------------------------ | -------------------- | --------------------------------------------------------- |
+| **ImageIO**       | `ImageIO.read(File input)`                                    | Đọc ảnh từ tệp        | Tải ảnh từ đường dẫn tệp tin và trả về một đối tượng `BufferedImage`.          | Đọc ảnh              | Ném `IOException` nếu tệp lỗi hoặc không tìm thấy.        |
+| **ImageIO**       | `ImageIO.read(URL input)`                                     | Đọc ảnh từ URL        | Tải ảnh từ một địa chỉ web trực tuyến.                                         | Đọc ảnh              | Cần xử lý kết nối mạng và lỗi IO.                         |
+| **ImageIO**       | `ImageIO.write(RenderedImage im, String format, File output)` | Ghi ảnh xuống đĩa     | Lưu đối tượng ảnh xuống đĩa theo định dạng chỉ định (ví dụ: `"png"`, `"jpg"`). | Ghi ảnh              | Định dạng viết thường (không phân biệt hoa thường).       |
+| **BufferedImage** | `getWidth()`                                                  | Lấy chiều rộng        | Trả về số lượng điểm ảnh theo chiều ngang.                                     | Truy xuất thuộc tính | Trả về kiểu dữ liệu `int`.                                |
+| **BufferedImage** | `getHeight()`                                                 | Lấy chiều cao         | Trả về số lượng điểm ảnh theo chiều dọc.                                       | Truy xuất thuộc tính | Trả về kiểu dữ liệu `int`.                                |
+| **BufferedImage** | `getRGB(int x, int y)`                                        | Lấy màu sắc điểm ảnh  | Trả về mã màu dạng ARGB (Alpha-Red-Green-Blue) tại tọa độ `(x, y)`.            | Xử lý điểm ảnh       | Tọa độ tính từ `0` đến `width-1`/`height-1`.              |
+| **BufferedImage** | `setRGB(int x, int y, int rgb)`                               | Thay đổi màu điểm ảnh | Gán mã màu ARGB mới cho điểm ảnh tại tọa độ `(x, y)`.                          | Xử lý điểm ảnh       | Thay đổi trực tiếp trên đối tượng BufferedImage hiện tại. |
 
 ---
 

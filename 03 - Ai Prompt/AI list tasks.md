@@ -1,3 +1,4 @@
+# Đây là danh sách các yêu cầu mà AI đã, đang và sẽ chuẩn bị làm.
 - [x] Chỉnh sửa "02 - Spring Boot", thiếu giải thích cách chuyền các giá trị hoặc đối tượng ra view hoặc ngược lại nhận giá trị hoặc object từ view: model, param, RequestParam, ModelAttribute,.... ✅ 2026-08-17
 - [x] "07 - Front End programing/02 HTML" tạo md mới có bảng danh sách các statement hoặc lệnh "boot trap". ✅ 2026-08-17
 - [x] "Các cú pháp đặt tên truy vấn Derived Queries phổ biến" trong "02 - Spring Data JPA and Hibernate" chưa đầy đủ, cần chia ra thành 3 bảng "Nhóm điều kiện cơ bản", "Toán tử so sánh", "NULL", và "String". ✅ 2026-08-17
@@ -7,6 +8,11 @@
 - [x] Các md còn lại thì tạo 1 folder riêng, trùng tên và di chuyển md đấy vao trong và thay đổi số thứ tự. ✅ 2026-08-17
 - [x] Số thứ tự sẽ bắt đầu từ index 01. ✅ 2026-08-17
 - [x] "09 - Java Advanced Basics" Bổ sung thê ResourceBundle, và Ramdom. ✅ 2026-08-17
-- [ ] "07 - Regex and String Matching" bổ sung thê md ghi chứa các regex phổ biến.
-- [ ] "01 - Java Advanced Basics" tách thành các md tương ứng:  Java Stream API,  Java File I/O,  Quản lý Hình ảnh (Images) cơ bản trong Java, và sắp xếp lại thứ tự các md theo mức độ cơ bản - nâng cao.
-- [ ] "02 - ResourceBundle" cần thêm cách đặt tên và ví dụ đầy đủ: flow, code toàn bộ class.
+- [x] "07 - Regex and String Matching" bổ sung thê md ghi chứa các regex phổ biến. ✅ 2026-08-18
+- [x] "01 - Java Advanced Basics" tách thành các md tương ứng:  Java Stream API,  Java File I/O,  Quản lý Hình ảnh (Images) cơ bản trong Java, và sắp xếp lại thứ tự các md theo mức độ cơ bản - nâng cao. ✅ 2026-08-18
+- [x] "02 - ResourceBundle" cần thêm cách đặt tên và ví dụ đầy đủ: flow, code toàn bộ class. ✅ 2026-08-18
+- [x] "02 - Objects" Bổ sung thêm bảng chứa các statements, methods, ... thường được sử dụng. ✅ 2026-08-18
+---
+- [x] "02 - Spring Boot" và "03 - JavaFX" tạo  các folder riêng cho từng file md tương ứng, và di chuyển các file md tương ứng đó vào folder vừa được tạo, reset lại số thứ tự bắt đầu từ **index 1**. ✅ 2026-08-18
+- [x] "09 - Java Advanced Basics'" Thêm md về LocaleDate ✅ 2026-08-18
+- [x] "04 - Java File IO" cần nêu rõ cách giữa đường dẫn tuyệt đối và tương đương, Các bước để tạo, đọc, chính sửa vẵn bản trong file hoặc lấy tên các file trong 1 folder, lấy ví dụ rõ ràng, có cả sơ đồ path làm ví dụ, làm mỗi hành động 1 ví du. ✅ 2026-08-18

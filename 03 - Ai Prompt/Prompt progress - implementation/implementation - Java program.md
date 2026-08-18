@@ -28,6 +28,10 @@
 - [x] Tách `09 - Java Advanced Basics` thành: Java Stream API, Java File I/O, Quản lý Hình ảnh cơ bản ✅ 2026-08-18
 - [x] Sắp xếp lại index toàn bộ file trong `09 - Java Advanced Basics` theo cơ bản → nâng cao ✅ 2026-08-18
 - [x] Bổ sung cách đặt tên + FLOW + code class đầy đủ cho `03 - ResourceBundle` ✅ 2026-08-18
+- [x] Bổ sung bảng statement/method cho `02 - Objects` ✅ 2026-08-18
+- [x] Thêm file `LocalDate` vào `Java Advanced Basics` ✅ 2026-08-18
+- [x] Bổ sung chi tiết absolute/relative path + 4 ví dụ thao tác cho `Java File IO` ✅ 2026-08-18
+
 
 
 ## Quy tắc áp dụng (tóm tắt)
@@ -105,9 +109,16 @@
   - Xóa tệp cũ `01 - Java Advanced Basics.md`, `02 - ResourceBundle.md` cũ, và `03 - Random.md` cũ sau khi đã di chuyển và chia tách thành công.
 - **Đã thay đổi:** Cấu trúc lại và tối ưu hóa tài liệu của Java Core trong Obsidian vault.
 
+### [2026-08-18 15:10]
+- **Đã làm:**
+  - Bổ sung bảng tham chiếu và ví dụ minh họa chi tiết cho các statement/method/keyword thường dùng trong `02 - Objects.md`.
+  - Tạo tệp `03 - LocalDate.md` trong `09 - Java Advanced Basics` giới thiệu về API `LocalDate`, các method thông dụng và ví dụ đầy đủ.
+  - Cập nhật tệp `05 - Java File IO.md` (được rename từ `04 - Java File IO.md` để nhường index 03 cho `LocalDate`) bổ sung chi tiết về đường dẫn tuyệt đối/tương đối, sơ đồ cấu trúc thư mục dự án và 4 ví dụ thao tác file chạy được bằng Java IO & NIO.2.
+- **Đã thay đổi:** Mở rộng tài liệu về Java Objects, LocalDate và Java File I/O trong Java Core.
+
 
 ## Trạng thái hiện tại
-- **Đã hoàn thành:** 100% checklist và yêu cầu bổ sung của vault "06 - Java Program".
+- **Đã hoàn thành:** 100% checklist và yêu cầu bổ sung của vault "06 - Java Program" phần Java Core.
 - **Đang làm dở / chưa làm tới:** Không có.
 
 ## Lưu ý
