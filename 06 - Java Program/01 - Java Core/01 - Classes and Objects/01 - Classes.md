@@ -1,12 +1,11 @@
-# Java Classes and Objects
+# Java Classes
 
 > [!abstract] Định nghĩa
-> **Class (Lớp)** là một bản thiết kế (blueprint) hoặc khuôn mẫu định nghĩa các thuộc tính (fields) và hành vi (methods) chung cho các đối tượng được tạo từ nó.
-> **Object (Đối tượng)** là một thực thể cụ thể (instance) được tạo ra từ bản thiết kế class, sở hữu vùng nhớ riêng trong Heap.
+> **Class (Lớp)** là một bản thiết kế (blueprint) hoặc khuôn mẫu định nghĩa các thuộc tính (fields) và hành vi (methods) chung cho các đối tượng. Lớp dùng để khởi tạo các đối tượng cụ thể (xem chi tiết tại [[02 - Objects]]).
 
 ---
 
-## Cấu trúc thành phần cơ bản
+## Cấu trúc thành phần cơ bản của Class
 
 | Thành phần | Ký hiệu / Khai báo | Phạm vi / Vị trí | Tác dụng |
 | --- | --- | --- | --- |

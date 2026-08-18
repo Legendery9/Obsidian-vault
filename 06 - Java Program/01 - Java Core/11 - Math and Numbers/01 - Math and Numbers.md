@@ -44,7 +44,7 @@ public class MathExample {
         double val = 5.4;
         double ceilVal = Math.ceil(val);   // 6.0 (Làm tròn lên)
         double floorVal = Math.floor(val); // 5.0 (Làm tròn xuống)
-        long roundVal = Math.round(val);   // 5 (Làm tròn toán học)
+        long roundedVal = Math.round(val);   // 5 (Làm tròn toán học)
 
         // 5. Khác biệt của round khi truyền float vs double
         float fVal = 5.6f;

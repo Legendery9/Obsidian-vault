@@ -14,6 +14,21 @@
 - [x] `07 - Regex and String Matching` — bảng method/statement đầy đủ cho các thư viện regex/string ✅ 2026-08-16
 - [x] `03 - Variables and Data Types` — bảng method/statement đầy đủ cho Wrapper Classes
 - [x] Thêm file `11 - Math.md` (hoặc tên phù hợp hơn nếu cần)
+- [x] Tách `01 - Classes and Objects` → 2 file (Classes, Objects) ✅ 2026-08-17
+- [x] Tách `02 - Methods and Modifiers` → 2 file (Methods, Modifiers) ✅ 2026-08-17
+- [x] Tách `03 - Variables and Data Types` → 4 file (Variables, Data Types, Primitive, Wrapper Class) ✅ 2026-08-17
+- [x] Tách `String and StringBuilder` → 2 file (String, StringBuilder) ✅ 2026-08-17
+- [x] Tách `05 - Operators and Keywords` → 2 file (Operators, Keywords) ✅ 2026-08-17
+- [x] Convert toàn bộ file `.md` rời còn lại → folder trùng tên + đánh index lại từ 01 ✅ 2026-08-17
+- [x] Đánh số lại toàn bộ index cấp gốc của `06 - Java Program` từ 01 ✅ 2026-08-17
+- [x] Cập nhật lại các link `[[context]]` bị ảnh hưởng bởi đổi tên/đổi index ✅ 2026-08-17
+- [x] Bổ sung `ResourceBundle` vào `09 - Java Advanced Basics` ✅ 2026-08-17
+- [x] Bổ sung `Random` vào `09 - Java Advanced Basics` ✅ 2026-08-17
+- [x] Thêm file Regex phổ biến vào `07 - Regex and String Matching` ✅ 2026-08-18
+- [x] Tách `09 - Java Advanced Basics` thành: Java Stream API, Java File I/O, Quản lý Hình ảnh cơ bản ✅ 2026-08-18
+- [x] Sắp xếp lại index toàn bộ file trong `09 - Java Advanced Basics` theo cơ bản → nâng cao ✅ 2026-08-18
+- [x] Bổ sung cách đặt tên + FLOW + code class đầy đủ cho `03 - ResourceBundle` ✅ 2026-08-18
+
 
 ## Quy tắc áp dụng (tóm tắt)
 - **Chuẩn hóa đặt tên:** Sử dụng định dạng `{index} - {context}` cho thư mục và tệp tin.
@@ -48,6 +63,48 @@
   - Cập nhật tệp `03 - Variables and Data Types.md` với bảng phương thức cho các Wrapper Classes (Integer, Double, Long, Character, Boolean).
   - Tạo tệp `11 - Math and Numbers.md` chứa hằng số và phương thức của lớp `Math`.
 - **Đã thay đổi:** Nâng cấp chi tiết kỹ thuật cho toàn bộ tệp ghi chú Java Core.
+
+### [2026-08-17 20:20]
+- **Đã làm:**
+  - Tách các file gộp chủ đề thành các thư mục chứa file con:
+    - `01 - Classes and Objects` chứa `01 - Classes.md` và `02 - Objects.md`.
+    - `02 - Methods and Modifiers` chứa `01 - Methods.md` và `02 - Modifiers.md`.
+    - `03 - Variables and Data Types` chứa `01 - Variables.md`, `02 - Data Types.md`, `03 - Primitive.md`, và `04 - Wrapper Class.md`.
+    - `04 - String and StringBuilder` chứa `01 - String.md` và `02 - StringBuilder.md`.
+    - `05 - Operators and Keywords` chứa `01 - Operators.md` và `02 - Keywords.md`.
+  - Chuyển các file `.md` rời thành thư mục tương ứng chứa file con bắt đầu từ `01`:
+    - `06 - Varargs` chứa `01 - Varargs.md`.
+    - `07 - Regex and String Matching` chứa `01 - Regex and String Matching.md`.
+    - `09 - Java Advanced Basics` chứa `01 - Java Advanced Basics.md`.
+    - `10 - Java Code Conventions` chứa `01 - Java Code Conventions.md`.
+    - `11 - Math and Numbers` chứa `01 - Math and Numbers.md`.
+  - Bổ sung tài liệu chất lượng cao vào `09 - Java Advanced Basics`:
+    - `02 - ResourceBundle.md` giải thích i18n, các hàm `getBundle`, `getString`, `getKeys`, ví dụ và lưu ý UTF-8.
+    - `03 - Random.md` giải thích tạo số ngẫu nhiên, các hàm `nextInt`, `nextDouble`, `nextBoolean`, ví dụ và lưu ý ThreadLocalRandom / SecureRandom.
+  - Hoàn tất rà soát cấu trúc thư mục, đánh số lại toàn bộ từ `01` đến `11` đảm bảo nhất quán tuyệt đối.
+  - Cập nhật các liên kết wikilink `[[context]]` chéo giữa các bài viết con trong cùng folder để tránh lặp lý thuyết.
+- **Đã thay đổi:** Tái cấu trúc hoàn toàn hệ thống tệp ghi chú Java Core sang cấu trúc thư mục phân bài độc lập.
+
+### [2026-08-18 07:25]
+- **Đã làm:**
+  - Thêm tệp mới `02 - Common Regex Patterns.md` vào thư mục `07 - Regex and String Matching`.
+  - Tách nội dung của `01 - Java Advanced Basics.md` thành 3 tệp riêng biệt:
+    - `01 - Basic Image Management.md` (Quản lý hình ảnh cơ bản)
+    - `04 - Java File IO.md` (Java File I/O)
+    - `05 - Java Stream API.md` (Java Stream API)
+  - Sắp xếp lại thứ tự các tệp trong thư mục `09 - Java Advanced Basics` theo độ khó từ cơ bản đến nâng cao:
+    - `01 - Basic Image Management.md`
+    - `02 - Random.md`
+    - `03 - ResourceBundle.md`
+    - `04 - Java File IO.md`
+    - `05 - Java Stream API.md`
+  - Bổ sung chi tiết cho tệp `03 - ResourceBundle.md`:
+    - Thêm chi tiết về Quy tắc đặt tên tệp (Naming Convention).
+    - Thêm biểu đồ FLOW (Mermaid Sequence Diagram) mô tả quy trình xử lý và cơ chế Fallback của JVM.
+    - Thêm ví dụ mã nguồn đầy đủ với class `InternationalizationApp` hoàn chỉnh bao gồm hàm `main`.
+  - Xóa tệp cũ `01 - Java Advanced Basics.md`, `02 - ResourceBundle.md` cũ, và `03 - Random.md` cũ sau khi đã di chuyển và chia tách thành công.
+- **Đã thay đổi:** Cấu trúc lại và tối ưu hóa tài liệu của Java Core trong Obsidian vault.
+
 
 ## Trạng thái hiện tại
 - **Đã hoàn thành:** 100% checklist và yêu cầu bổ sung của vault "06 - Java Program".

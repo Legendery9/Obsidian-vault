@@ -20,9 +20,9 @@ public void printNames(String... names) {
 ```
 
 Trình biên dịch Java sẽ tự động chuyển các cách gọi hàm thành mảng:
-- `printNames()` → Biên dịch thành `printNames(new String[]{})` (mảng rỗng).
-- `printNames("An")` → Biên dịch thành `printNames(new String[]{"An"})`.
-- `printNames("An", "Bình")` → Biên dịch thành `printNames(new String[]{"An", "Bình"})`.
+- `printNames()` $\rightarrow$ Biên dịch thành `printNames(new String[]{})` (mảng rỗng).
+- `printNames("An")` $\rightarrow$ Biên dịch thành `printNames(new String[]{"An"})`.
+- `printNames("An", "Bình")` $\rightarrow$ Biên dịch thành `printNames(new String[]{"An", "Bình"})`.
 
 ---
 

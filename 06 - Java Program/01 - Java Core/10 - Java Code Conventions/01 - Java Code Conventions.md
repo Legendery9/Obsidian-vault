@@ -65,7 +65,7 @@ if (score >= 50) {
 
 ---
 
-## 4. Thực thực hành lập trình tốt (Best Practices)
+## 4. Thực hành lập trình tốt (Best Practices)
 
 - **Tránh biến toàn cục:** Luôn khai báo biến cục bộ ở phạm vi nhỏ nhất gần nơi sử dụng đầu tiên.
 - **Tránh ép kiểu ngầm định phức tạp:** Hãy viết tường minh các phép toán để tránh nhầm lẫn về kiểu dữ liệu.

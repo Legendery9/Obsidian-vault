@@ -1,0 +1,12 @@
+- [x] Chỉnh sửa "02 - Spring Boot", thiếu giải thích cách chuyền các giá trị hoặc đối tượng ra view hoặc ngược lại nhận giá trị hoặc object từ view: model, param, RequestParam, ModelAttribute,.... ✅ 2026-08-17
+- [x] "07 - Front End programing/02 HTML" tạo md mới có bảng danh sách các statement hoặc lệnh "boot trap". ✅ 2026-08-17
+- [x] "Các cú pháp đặt tên truy vấn Derived Queries phổ biến" trong "02 - Spring Data JPA and Hibernate" chưa đầy đủ, cần chia ra thành 3 bảng "Nhóm điều kiện cơ bản", "Toán tử so sánh", "NULL", và "String". ✅ 2026-08-17
+- [x] Tách "01 - Classes and Objects" thành 2 md trong 1 folder "01 - Classes and Objects" để giải thích lần lượt: classes và objects. ✅ 2026-08-17
+- [x] Tương tự với "02 - Methods and Modifiers", "03 - Variables and Data Types", "String and StringBuilder", "05 - Operators and Keywords" ✅ 2026-08-17
+- [x] "03 - Variables and Data Types" bổ sung thêm 2 md giải thích lần lượt Primitive và Wrapper class ✅ 2026-08-17
+- [x] Các md còn lại thì tạo 1 folder riêng, trùng tên và di chuyển md đấy vao trong và thay đổi số thứ tự. ✅ 2026-08-17
+- [x] Số thứ tự sẽ bắt đầu từ index 01. ✅ 2026-08-17
+- [x] "09 - Java Advanced Basics" Bổ sung thê ResourceBundle, và Ramdom. ✅ 2026-08-17
+- [ ] "07 - Regex and String Matching" bổ sung thê md ghi chứa các regex phổ biến.
+- [ ] "01 - Java Advanced Basics" tách thành các md tương ứng:  Java Stream API,  Java File I/O,  Quản lý Hình ảnh (Images) cơ bản trong Java, và sắp xếp lại thứ tự các md theo mức độ cơ bản - nâng cao.
+- [ ] "02 - ResourceBundle" cần thêm cách đặt tên và ví dụ đầy đủ: flow, code toàn bộ class.
