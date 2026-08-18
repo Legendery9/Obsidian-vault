@@ -24,29 +24,29 @@ System.out.println(s1 == s3); // false (s3 trỏ vào đối tượng mới tạ
 
 ## 2. Bảng tra cứu các phương thức String thông dụng
 
-| Phương thức | Kiểu trả về | Tác dụng |
-| --- | --- | --- |
-| `length()` | `int` | Trả về độ dài chuỗi ký tự. |
-| `charAt(int index)` | `char` | Lấy ký tự tại vị trí index chỉ định (bắt đầu từ `0`). |
-| `contains(CharSequence s)` | `boolean` | Kiểm tra chuỗi con có tồn tại hay không. |
-| `equals(Object anObject)` | `boolean` | So sánh nội dung hai chuỗi (nhạy cảm hoa/thường). |
-| `equalsIgnoreCase(String s)` | `boolean` | So sánh nội dung bỏ qua chữ hoa thường. |
-| `substring(int beginIndex, int endIndex)` | `String` | Trích xuất chuỗi con (không lấy phần tử tại `endIndex`). |
-| `trim()` | `String` | Loại bỏ khoảng trắng ở hai đầu chuỗi. |
-| `split(String regex)` | `String[]` | Phân tách chuỗi thành mảng dựa theo biểu thức chính quy. |
-| `matches(String regex)` | `boolean` | So khớp toàn bộ chuỗi với mẫu regex. |
-| `intern()` | `String` | Đưa chuỗi vào String Pool và trả về tham chiếu từ Pool. |
+| Phương thức                               | Kiểu trả về | Tác dụng                                                 |
+| ----------------------------------------- | ----------- | -------------------------------------------------------- |
+| `length()`                                | `int`       | Trả về độ dài chuỗi ký tự.                               |
+| `charAt(int index)`                       | `char`      | Lấy ký tự tại vị trí index chỉ định (bắt đầu từ `0`).    |
+| `contains(CharSequence s)`                | `boolean`   | Kiểm tra chuỗi con có tồn tại hay không.                 |
+| `equals(Object anObject)`                 | `boolean`   | So sánh nội dung hai chuỗi (nhạy cảm hoa/thường).        |
+| `equalsIgnoreCase(String s)`              | `boolean`   | So sánh nội dung bỏ qua chữ hoa thường.                  |
+| `substring(int beginIndex, int endIndex)` | `String`    | Trích xuất chuỗi con (không lấy phần tử tại `endIndex`). |
+| `trim()`                                  | `String`    | Loại bỏ khoảng trắng ở hai đầu chuỗi.                    |
+| `split(String regex)`                     | `String[]`  | Phân tách chuỗi thành mảng dựa theo biểu thức chính quy. |
+| `matches(String regex)`                   | `boolean`   | So khớp toàn bộ chuỗi với mẫu regex.                     |
+| `intern()`                                | `String`    | Đưa chuỗi vào String Pool và trả về tham chiếu từ Pool.  |
 
 ---
 
 ## 3. Phương thức String mới từ Java 11+
 
-| Phương thức | Tác dụng |
-| --- | --- |
-| `isBlank()` | Trả về `true` nếu chuỗi rỗng hoặc chỉ chứa toàn khoảng trắng (khác với `isEmpty()`). |
-| `strip()` | Loại bỏ khoảng trắng Unicode ở đầu và cuối chuỗi (chuẩn hơn `trim()`). |
-| `repeat(int count)` | Lặp lại chuỗi `count` lần. |
-| `lines()` | Trả về một `Stream<String>` phân tách chuỗi theo từng dòng. |
+| Phương thức         | Tác dụng                                                                             |
+| ------------------- | ------------------------------------------------------------------------------------ |
+| `isBlank()`         | Trả về `true` nếu chuỗi rỗng hoặc chỉ chứa toàn khoảng trắng (khác với `isEmpty()`). |
+| `strip()`           | Loại bỏ khoảng trắng Unicode ở đầu và cuối chuỗi (chuẩn hơn `trim()`).               |
+| `repeat(int count)` | Lặp lại chuỗi `count` lần.                                                           |
+| `lines()`           | Trả về một `Stream<String>` phân tách chuỗi theo từng dòng.                          |
 
 ---
 
