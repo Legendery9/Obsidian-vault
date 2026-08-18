@@ -18,12 +18,12 @@ Chuẩn hóa cơ sở dữ liệu là quá trình tổ chức cấu trúc bảng
 
 ### Các dạng chuẩn cơ bản (1NF, 2NF, 3NF, BCNF)
 
-| Dạng chuẩn | Điều kiện bắt buộc | Cách khắc phục vi phạm |
-| :--- | :--- | :--- |
-| **1NF** (First Normal Form) | - Mỗi ô chỉ chứa duy nhất một giá trị nguyên tố (atomic value).<br>- Không chứa mảng, danh sách hoặc nhóm lặp. | Tách các giá trị phân tách bằng dấu phẩy thành nhiều hàng riêng biệt hoặc bảng riêng. |
-| **2NF** (Second Normal Form) | - Phải đạt chuẩn 1NF.<br>- Mọi cột không phải khóa phải phụ thuộc hoàn toàn vào khóa chính (nếu khóa chính là khóa kép). | Tách các thuộc tính chỉ phụ thuộc vào một phần của khóa chính ra một bảng mới. |
-| **3NF** (Third Normal Form) | - Phải đạt chuẩn 2NF.<br>- Không có phụ thuộc bắc cầu giữa các thuộc tính không phải khóa (ví dụ: A → B, B → C thì không được có). | Tách thuộc tính phụ thuộc bắc cầu ra bảng riêng (đưa B và C ra bảng mới, giữ lại B làm khóa ngoại ở bảng gốc). |
-| **BCNF** (Boyce-Codd Normal Form)| - Phải đạt chuẩn 3NF.<br>- Mọi phụ thuộc hàm $X \to Y$ thì $X$ phải là siêu khóa (superkey). | Phân rã bảng để tất cả các mối quan hệ phụ thuộc đều bắt nguồn từ khóa chính. |
+| Dạng chuẩn                        | Điều kiện bắt buộc                                                                                                                 | Cách khắc phục vi phạm                                                                                         |
+| :-------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------- |
+| **1NF** (First Normal Form)       | - Mỗi ô chỉ chứa duy nhất một giá trị nguyên tố (atomic value).<br>- Không chứa mảng, danh sách hoặc nhóm lặp.                     | Tách các giá trị phân tách bằng dấu phẩy thành nhiều hàng riêng biệt hoặc bảng riêng.                          |
+| **2NF** (Second Normal Form)      | - Phải đạt chuẩn 1NF.<br>- Mọi cột không phải khóa phải phụ thuộc hoàn toàn vào khóa chính (nếu khóa chính là khóa kép).           | Tách các thuộc tính chỉ phụ thuộc vào một phần của khóa chính ra một bảng mới.                                 |
+| **3NF** (Third Normal Form)       | - Phải đạt chuẩn 2NF.<br>- Không có phụ thuộc bắc cầu giữa các thuộc tính không phải khóa (ví dụ: A → B, B → C thì không được có). | Tách thuộc tính phụ thuộc bắc cầu ra bảng riêng (đưa B và C ra bảng mới, giữ lại B làm khóa ngoại ở bảng gốc). |
+| **BCNF** (Boyce-Codd Normal Form) | - Phải đạt chuẩn 3NF.<br>- Mọi phụ thuộc hàm $X \to Y$ thì $X$ phải là siêu khóa (superkey).                                       | Phân rã bảng để tất cả các mối quan hệ phụ thuộc đều bắt nguồn từ khóa chính.                                  |
 
 ---
 
@@ -32,7 +32,7 @@ Chuẩn hóa cơ sở dữ liệu là quá trình tổ chức cấu trúc bảng
 ### 1. Vi phạm và sửa đổi 1NF
 - **Vi phạm 1NF:**
   | Tên Học Sinh | Môn Học |
-  | :--- | :--- |
+  | ---- | ---- |
   | An | Toán, Lý, Hóa |
 - **Đạt chuẩn 1NF (Mỗi ô 1 giá trị):**
   | Tên Học Sinh | Môn Học |
