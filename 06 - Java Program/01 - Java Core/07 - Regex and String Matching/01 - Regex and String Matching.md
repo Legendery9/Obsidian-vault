@@ -55,7 +55,7 @@ Lớp `String` trong Java tích hợp sẵn các phương thức hỗ trợ Rege
 > | `+` | Xuất hiện từ 1 hoặc nhiều lần. | `ab+` khớp `ab`, `abbb` |
 > | `?` | Xuất hiện 0 hoặc 1 lần. | `ab?` khớp `a`, `ab` |
 > | `{n}` | Xuất hiện đúng `n` lần. | `\\d{3}` khớp `456` |
-> | `{n,m}` | Xuất hiện từ `n` đến `m` lần. | `\\d{3,5}` khớp `1234` |
+> | `[ab]` | Một ký tự là `a` hoặc `b`. | `[xyz]` khớp `y` |
 
 ---
 
