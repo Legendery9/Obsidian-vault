@@ -1,4 +1,4 @@
-# Đây là danh sách các yêu cầu mà AI đã, đang và sẽ chuẩn bị làm.
+# Đây là danh sách các yêu cầu mà AI đã theo từng đợt, đang và sẽ chuẩn bị làm.
 - [x] Chỉnh sửa "02 - Spring Boot", thiếu giải thích cách chuyền các giá trị hoặc đối tượng ra view hoặc ngược lại nhận giá trị hoặc object từ view: model, param, RequestParam, ModelAttribute,.... ✅ 2026-08-17
 - [x] "07 - Front End programing/02 HTML" tạo md mới có bảng danh sách các statement hoặc lệnh "boot trap". ✅ 2026-08-17
 - [x] "Các cú pháp đặt tên truy vấn Derived Queries phổ biến" trong "02 - Spring Data JPA and Hibernate" chưa đầy đủ, cần chia ra thành 3 bảng "Nhóm điều kiện cơ bản", "Toán tử so sánh", "NULL", và "String". ✅ 2026-08-17
@@ -16,3 +16,12 @@
 - [x] "02 - Spring Boot" và "03 - JavaFX" tạo  các folder riêng cho từng file md tương ứng, và di chuyển các file md tương ứng đó vào folder vừa được tạo, reset lại số thứ tự bắt đầu từ **index 1**. ✅ 2026-08-18
 - [x] "09 - Java Advanced Basics'" Thêm md về LocaleDate ✅ 2026-08-18
 - [x] "04 - Java File IO" cần nêu rõ cách giữa đường dẫn tuyệt đối và tương đương, Các bước để tạo, đọc, chính sửa vẵn bản trong file hoặc lấy tên các file trong 1 folder, lấy ví dụ rõ ràng, có cả sơ đồ path làm ví dụ, làm mỗi hành động 1 ví du. ✅ 2026-08-18
+---
+- [ ]  "05 - Coding environment" chưa hoàn thành.
+	- [ ] 
+- [ ] "02 - Obsidian system" chưa hoàn thành.
+	- [ ] 
+- [ ] "08 - MySql" chưa hoàn thành.
+	- [ ] 
+- [ ] "12 - Learning" chưa hoàn thành.
+	- [ ] 
