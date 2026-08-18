@@ -17,13 +17,14 @@
 - [x] "09 - Java Advanced Basics'" Thêm md về LocaleDate ✅ 2026-08-18
 - [x] "04 - Java File IO" cần nêu rõ cách giữa đường dẫn tuyệt đối và tương đương, Các bước để tạo, đọc, chính sửa vẵn bản trong file hoặc lấy tên các file trong 1 folder, lấy ví dụ rõ ràng, có cả sơ đồ path làm ví dụ, làm mỗi hành động 1 ví du. ✅ 2026-08-18
 ---
-- [ ] "02 - Obsidian system"
-	- [ ] Đặt lại tên cho từng folder và áp dụng quy tắc sắp xếp lại cho "01 - Features" theo thứ cho callout, latex và markup.
-	- [ ] Đặt lại tên cho các file md có trong các folder theo quy tắc.
-	- [ ] Hoàn thành nội dung của các file md theo quy tắc 80/20: Tạo bảng, giải thích, ghi chú,... theo quy tắc.
-- [ ] "05 - Coding environment"
-	- [ ] Tương tự "02 - Obsidian system"
-- [ ] "08 - MySql"
-	- [ ] Tương tự "02 - Obsidian system"
-- [ ] "12 - Learning"
-	- [ ] Tương tự "02 - Obsidian system"
+- [x] "02 - Obsidian system" ✅ 2026-08-18
+	- [x] Đặt lại tên cho từng folder và áp dụng quy tắc sắp xếp lại cho "01 - Features" theo thứ cho callout, latex và markup. ✅ 2026-08-18
+	- [x] Đặt lại tên cho các file md có trong các folder theo quy tắc. ✅ 2026-08-18
+	- [x] Hoàn thành nội dung của các file md theo quy tắc 80/20: Tạo bảng, giải thích, ghi chú,... theo quy tắc. ✅ 2026-08-18
+- [x] "05 - Coding environment" ✅ 2026-08-18
+	- [x] Tương tự "02 - Obsidian system" ✅ 2026-08-18
+- [x] "08 - MySql" ✅ 2026-08-18
+	- [x] Tương tự "02 - Obsidian system" ✅ 2026-08-18
+- [x] "12 - Learning" ✅ 2026-08-18
+	- [x] Tương tự "02 - Obsidian system" ✅ 2026-08-18
+- [ ] 
