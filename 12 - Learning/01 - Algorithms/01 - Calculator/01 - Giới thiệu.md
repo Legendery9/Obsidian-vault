@@ -26,5 +26,5 @@ Nhóm thuật toán máy tính bao gồm các phương pháp tính toán cơ s�
 
 ## Ví dụ
 Xem chi tiết các phương pháp triển khai cụ thể tại:
-- [[02 - Chuyen doi co so]] (Chuyển đổi giữa các hệ số)
-- [[03 - Nhan ma tran]] (Thuật toán nhân hai ma trận)
+- [[02 - Base Conversion]] (Chuyển đổi giữa các hệ số)
+- [[03 - Matrix Multiplication]] (Thuật toán nhân hai ma trận)
