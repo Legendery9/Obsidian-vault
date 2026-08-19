@@ -31,15 +31,17 @@ Chuẩn hóa cơ sở dữ liệu là quá trình tổ chức cấu trúc bảng
 
 ### 1. Vi phạm và sửa đổi 1NF
 - **Vi phạm 1NF:**
-  | Tên Học Sinh | Môn Học |
-  | ---- | ---- |
-  | An | Toán, Lý, Hóa |
+
+| Tên Học Sinh | Môn Học       |
+| ------------ | ------------- |
+| An           | Toán, Lý, Hóa |
 - **Đạt chuẩn 1NF (Mỗi ô 1 giá trị):**
-  | Tên Học Sinh | Môn Học |
-  | :--- | :--- |
-  | An | Toán |
-  | An | Lý |
-  | An | Hóa |
+
+| Tên Học Sinh | Môn Học |
+| :----------- | :------ |
+| An           | Toán    |
+| An           | Lý      |
+| An           | Hóa     |
 
 ### 2. Vi phạm và sửa đổi 2NF
 Giả sử có khóa chính kép là `(Mã SV, Mã Môn)`.
