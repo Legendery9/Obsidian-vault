@@ -13,7 +13,6 @@
   5. Tuân thủ `[[01 - Java Code Conventions]]`.
   6. Ghi chú/Lưu ý.
   7. Mỗi hành vi yêu cầu có 1 method riêng biệt để xử lý, không gộp.
-- **Tên file log:** Phải luôn khớp với tên thư mục thực tế (`12 - Combined Practice`).
 
 ## Nhật ký thay đổi
 ### [2026-08-19 14:14]

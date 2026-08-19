@@ -30,9 +30,7 @@ public class PaymentService {
 ---
 
 ## 2. Tổ chức tệp nguồn (File Organization)
-
 Mỗi file nguồn Java nên có cấu trúc tuần tự rõ ràng từ trên xuống dưới như sau:
-
 1. **Khai báo Package** (`package com.example;`)
 2. **Các dòng Import** (Nhóm có thứ tự: thư viện Java standard trước, sau đó tới thư viện bên thứ ba và nội bộ).
 3. **Khai báo Class chính** (Public class).
@@ -47,7 +45,6 @@ Mỗi file nguồn Java nên có cấu trúc tuần tự rõ ràng từ trên xu
 ---
 
 ## 3. Thụt lề và Khoảng trắng (Indentation & Whitespace)
-
 - **Thụt lề:** Sử dụng đúng **4 khoảng trắng (spaces)** cho mỗi cấp độ thụt lề. Tránh dùng tab để đảm bảo giao diện hiển thị đồng nhất trên mọi trình soạn thảo.
 - **Độ dài dòng:** Giới hạn tối đa **80 ký tự** trên một dòng đối với mã nguồn thông thường và **70 ký tự** đối với tài liệu (JavaDoc). Nếu dòng quá dài, thực hiện ngắt dòng sau dấu phẩy hoặc trước toán tử.
 - **Khoảng trắng:**
@@ -66,9 +63,9 @@ if (score >= 50) {
 ---
 
 ## 4. Thực hành lập trình tốt (Best Practices)
-
 - **Tránh biến toàn cục:** Luôn khai báo biến cục bộ ở phạm vi nhỏ nhất gần nơi sử dụng đầu tiên.
 - **Tránh ép kiểu ngầm định phức tạp:** Hãy viết tường minh các phép toán để tránh nhầm lẫn về kiểu dữ liệu.
+- **Tránh nhầm lẫn về thứ tự ưu tiên của toán tử:** Nếu một câu điều kiện chứa từ hai toán tử so sánh trở lên, hãy sử dụng `()` để nhóm từng biểu thức so sánh.
 - **Xử lý Exception:** Không bao giờ nuốt các Exception mà không ghi log hay xử lý (Empty catch block).
 
 ```java
@@ -87,3 +84,31 @@ try {
     throw new RuntimeException("Lỗi hệ thống không thể khởi chạy", e);
 }
 ```
+
+---
+
+## 5. Sử dụng chú thích mã nguồn (comments)
+- **Ngôn ngữ:** tiếng việt.
+- **Tại các vị trí:**
+	- Trước `header` của tất cả các `class` (Trừ `constructor`, `getter` và `setter`), luôn chú thích: 
+		- Tên class: `{Class Name}`.
+		- Phiên bản:  `{Phiên bản Java}`
+		- Date tạo class: ` Date of code` 
+		- Latest: `{Latest Date}`.
+		- Bản quyền: `{Tên người dùng}`.
+		- mã sinh viên: `{HE\d{6}$}`.
+		- Mục đích: `{Mục đích file}`.
+	- Statement gọi `hàm`.
+	- Statement có `điều kiện rẽ nhánh`
+- **Sử dụng các ký tự đặc biệt:**
+
+| Marker   | Ý nghĩa               | Code::Blocks    |
+| -------- | --------------------- | --------------- |
+| TODO     | Việc cần làm          | ✅               |
+| FIXME    | Cần sửa lỗi           | ✅               |
+| XXX      | Đáng nghi/cần xem lại | ✅               |
+| NOTE     | Ghi chú               | ⚠️ tùy cấu hình |
+| HACK     | Code workaround       | ⚠️ tùy cấu hình |
+| BUG      | Lỗi đã biết           | ⚠️ tùy cấu hình |
+| WARNING  | Cảnh báo              | ⚠️ tùy cấu hình |
+| OPTIMIZE | Cần tối ưu            | ⚠️ tùy cấu hình |

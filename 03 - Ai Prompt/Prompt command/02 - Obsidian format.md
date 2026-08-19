@@ -83,7 +83,7 @@ Nếu chỉ minh họa thuật toán hoặc logic chương trình, không bắt 
 Đối với nội dung Java, nếu đang nói về coding convention thì ưu tiên **Oracle Java conventions**.
 Đối với ngôn ngữ khác, sử dụng convention phù hợp với ngôn ngữ đó thay vì áp dụng Oracle Java Convention.
 ## 4. LaTeX
-Khi nội dung chứa công thức toán học, ký hiệu toán học hoặc ký tự đặc biệt cần LaTeX:
+Khi nội dung chứa công thức toán học ký hiệu toán học hoặc ký tự đặc biệt cần LaTeX:
 ### Inline Math
 Sử dụng single dollar:
 ```text

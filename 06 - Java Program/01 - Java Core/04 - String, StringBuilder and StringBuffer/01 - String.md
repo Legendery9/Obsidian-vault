@@ -24,48 +24,48 @@ System.out.println(s1 == s3); // false (s3 trỏ vào đối tượng mới tạ
 
 ## 2. Bảng tra cứu các phương thức String đầy đủ
 
-| Nhóm chức năng | Phương thức | Kiểu trả về | Tác dụng | Ví dụ |
-| :--- | :--- | :--- | :--- | :--- |
-| **So sánh & Kiểm tra** | `equals(Object obj)` | `boolean` | So sánh nội dung 2 chuỗi (nhạy chữ hoa/thường). | `"abc".equals("ABC")` $\to$ `false` |
-| | `equalsIgnoreCase(String another)` | `boolean` | So sánh nội dung bỏ qua hoa/thường. | `"abc".equalsIgnoreCase("ABC")` $\to$ `true` |
-| | `compareTo(String another)` | `int` | So sánh theo thứ tự từ điển (ASCII). | `"apple".compareTo("banana")` $\to$ `< 0` |
-| | `compareToIgnoreCase(String another)`| `int` | So sánh từ điển bỏ qua hoa/thường. | `"Apple".compareToIgnoreCase("banana")` $\to$ `< 0` |
-| | `contentEquals(CharSequence cs)` | `boolean` | So sánh nội dung với `StringBuffer`/`StringBuilder`. | `"abc".contentEquals(new StringBuilder("abc"))` $\to$ `true` |
-| | `isEmpty()` | `boolean` | Kiểm tra chuỗi có độ dài bằng 0 hay không. | `"".isEmpty()` $\to$ `true` |
-| | `isBlank()` | `boolean` | Kiểm tra chuỗi rỗng hoặc chỉ chứa toàn khoảng trắng. | `"   ".isBlank()` $\to$ `true` |
-| | `startsWith(String prefix)` | `boolean` | Kiểm tra chuỗi có bắt đầu bằng `prefix` không. | `"Java".startsWith("Ja")` $\to$ `true` |
-| | `endsWith(String suffix)` | `boolean` | Kiểm tra chuỗi có kết thúc bằng `suffix` không. | `"Java".endsWith("va")` $\to$ `true` |
-| | `matches(String regex)` | `boolean` | So khớp chuỗi với biểu thức chính quy (regex). | `"123".matches("\\d+")` $\to$ `true` |
-| **Tìm kiếm & Trích xuất**| `length()` | `int` | Trả về số ký tự trong chuỗi. | `"Java".length()` $\to$ `4` |
-| | `charAt(int index)` | `char` | Lấy ký tự tại vị trí index (0-indexed). | `"Java".charAt(2)` $\to$ `'v'` |
-| | `indexOf(String str)` | `int` | Tìm vị trí xuất hiện đầu tiên của `str`. | `"Java".indexOf("a")` $\to$ `1` |
-| | `lastIndexOf(String str)` | `int` | Tìm vị trí xuất hiện cuối cùng của `str`. | `"Java".lastIndexOf("a")` $\to$ `3` |
-| | `contains(CharSequence s)` | `boolean` | Kiểm tra chuỗi có chứa `s` không. | `"Java".contains("av")` $\to$ `true` |
-| | `substring(int begin)` | `String` | Trích xuất chuỗi con từ `begin` đến hết. | `"Hello".substring(2)` $\to$ `"llo"` |
-| | `substring(int begin, int end)` | `String` | Trích xuất chuỗi con từ `begin` đến trước `end`. | `"Hello".substring(1, 4)` $\to$ `"ell"` |
-| **Biến đổi & Định dạng**| `replace(char old, char new)` | `String` | Thay thế tất cả ký tự `old` bằng `new`. | `"Java".replace('a', 'o')` $\to$ `"Jovo"` |
-| | `replace(CharSequence target, CharSequence replacement)` | `String` | Thay thế chuỗi con khớp chính xác. | `"Hello".replace("ll", "y")` $\to$ `"Heyo"` |
-| | `replaceAll(String regex, String repl)`| `String` | Thay thế tất cả chuỗi khớp regex. | `"a1b2".replaceAll("\\d", "*")` $\to$ `"a*b*"` |
-| | `replaceFirst(String regex, String repl)`| `String` | Thay thế chuỗi đầu tiên khớp regex. | `"a1b2".replaceFirst("\\d", "*")` $\to$ `"a*b2"` |
-| | `toUpperCase()` | `String` | Chuyển toàn bộ chuỗi thành chữ hoa. | `"Java".toUpperCase()` $\to$ `"JAVA"` |
-| | `toLowerCase()` | `String` | Chuyển toàn bộ chuỗi thành chữ thường. | `"Java".toLowerCase()` $\to$ `"java"` |
-| | `trim()` | `String` | Loại bỏ khoảng trắng ở hai đầu chuỗi. | `" a ".trim()` $\to$ `"a"` |
-| | `strip()` | `String` | Loại bỏ khoảng trắng Unicode ở hai đầu. | `"\u2000a\u2000".strip()` $\to$ `"a"` |
-| | `stripLeading()` | `String` | Loại bỏ khoảng trắng ở đầu chuỗi. | `" a".stripLeading()` $\to$ `"a"` |
-| | `stripTrailing()` | `String` | Loại bỏ khoảng trắng ở cuối chuỗi. | `"a ".stripTrailing()` $\to$ `"a"` |
-| | `concat(String str)` | `String` | Nối chuỗi `str` vào cuối chuỗi hiện tại. | `"a".concat("b")` $\to$ `"ab"` |
-| | `repeat(int count)` | `String` | Lặp lại chuỗi `count` lần. | `"a".repeat(3)` $\to$ `"aaa"` |
-| | `String.format(String fmt, Object... args)`| `String` | Định dạng chuỗi tĩnh theo chuẩn C-style. | `String.format("%s: %d", "A", 1)` $\to$ `"A: 1"` |
-| | `formatted(Object... args)` | `String` | Định dạng chuỗi không tĩnh (Java 15+). | `"%s: %d".formatted("A", 1)` $\to$ `"A: 1"` |
-| **Chuyển đổi & Khác**| `split(String regex)` | `String[]` | Phân tách chuỗi thành mảng theo regex. | `"a-b".split("-")` $\to$ `["a", "b"]` |
-| | `split(String regex, int limit)` | `String[]` | Phân tách chuỗi với giới hạn số phần tử. | `"a-b-c".split("-", 2)` $\to$ `["a", "b-c"]` |
-| | `String.join(CharSequence delim, CharSequence... elements)`| `String` | Ghép các phần tử lại với nhau bằng dấu phân tách. | `String.join("-", "a", "b")` $\to$ `"a-b"` |
-| | `toCharArray()` | `char[]` | Chuyển chuỗi thành mảng ký tự. | `"Hi".toCharArray()` $\to$ `['H', 'i']` |
-| | `valueOf(Object obj)` | `String` | Chuyển đối tượng/kiểu nguyên thủy sang String. | `String.valueOf(123)` $\to$ `"123"` |
-| | `chars()` | `IntStream` | Trả về stream các mã ASCII/Unicode của ký tự. | `"A".chars()` $\to$ Stream chứa `65` |
-| | `getBytes()` | `byte[]` | Mã hóa chuỗi thành mảng byte (default charset). | `"A".getBytes()` $\to$ `[65]` |
-| | `lines()` | `Stream<String>`| Tách chuỗi theo các dòng. | `"a\nb".lines()` $\to$ Stream `["a", "b"]` |
-| | `intern()` | `String` | Đưa chuỗi vào String Pool và trả về tham chiếu. | `s.intern()` $\to$ Tham chiếu trong pool |
+| Nhóm chức năng            | Phương thức                                                 | Kiểu trả về      | Tác dụng                                             | Ví dụ                                                        |
+| :------------------------ | :---------------------------------------------------------- | :--------------- | :--------------------------------------------------- | :----------------------------------------------------------- |
+| **So sánh & Kiểm tra**    | `equals(Object obj)`                                        | `boolean`        | So sánh nội dung 2 chuỗi (nhạy chữ hoa/thường).      | `"abc".equals("ABC")` $\to$ `false`                          |
+|                           | `equalsIgnoreCase(String another)`                          | `boolean`        | So sánh nội dung bỏ qua hoa/thường.                  | `"abc".equalsIgnoreCase("ABC")` $\to$ `true`                 |
+|                           | `compareTo(String another)`                                 | `int`            | So sánh theo thứ tự từ điển (ASCII).                 | `"apple".compareTo("banana")` $\to$ `< 0`                    |
+|                           | `compareToIgnoreCase(String another)`                       | `int`            | So sánh từ điển bỏ qua hoa/thường.                   | `"Apple".compareToIgnoreCase("banana")` $\to$ `< 0`          |
+|                           | `contentEquals(CharSequence cs)`                            | `boolean`        | So sánh nội dung với `StringBuffer`/`StringBuilder`. | `"abc".contentEquals(new StringBuilder("abc"))` $\to$ `true` |
+|                           | `isEmpty()`                                                 | `boolean`        | Kiểm tra chuỗi có độ dài bằng 0 hay không.           | `"".isEmpty()` $\to$ `true`                                  |
+|                           | `isBlank()`                                                 | `boolean`        | Kiểm tra chuỗi rỗng hoặc chỉ chứa toàn khoảng trắng. | `"   ".isBlank()` $\to$ `true`                               |
+|                           | `startsWith(String prefix)`                                 | `boolean`        | Kiểm tra chuỗi có bắt đầu bằng `prefix` không.       | `"Java".startsWith("Ja")` $\to$ `true`                       |
+|                           | `endsWith(String suffix)`                                   | `boolean`        | Kiểm tra chuỗi có kết thúc bằng `suffix` không.      | `"Java".endsWith("va")` $\to$ `true`                         |
+|                           | `matches(String regex)`                                     | `boolean`        | So khớp chuỗi với biểu thức chính quy (regex).       | `"123".matches("\\d+")` $\to$ `true`                         |
+| **Tìm kiếm & Trích xuất** | `length()`                                                  | `int`            | Trả về số ký tự trong chuỗi.                         | `"Java".length()` $\to$ `4`                                  |
+|                           | `charAt(int index)`                                         | `char`           | Lấy ký tự tại vị trí index (0-indexed).              | `"Java".charAt(2)` $\to$ `'v'`                               |
+|                           | `indexOf(String str)`                                       | `int`            | Tìm vị trí xuất hiện đầu tiên của `str`.             | `"Java".indexOf("a")` $\to$ `1`                              |
+|                           | `lastIndexOf(String str)`                                   | `int`            | Tìm vị trí xuất hiện cuối cùng của `str`.            | `"Java".lastIndexOf("a")` $\to$ `3`                          |
+|                           | `contains(CharSequence s)`                                  | `boolean`        | Kiểm tra chuỗi có chứa `s` không.                    | `"Java".contains("av")` $\to$ `true`                         |
+|                           | `substring(int begin)`                                      | `String`         | Trích xuất chuỗi con từ `begin` đến hết.             | `"Hello".substring(2)` $\to$ `"llo"`                         |
+|                           | `substring(int begin, int end)`                             | `String`         | Trích xuất chuỗi con từ `begin` đến trước `end`.     | `"Hello".substring(1, 4)` $\to$ `"ell"`                      |
+| **Biến đổi & Định dạng**  | `replace(char old, char new)`                               | `String`         | Thay thế tất cả ký tự `old` bằng `new`.              | `"Java".replace('a', 'o')` $\to$ `"Jovo"`                    |
+|                           | `replace(CharSequence target, CharSequence replacement)`    | `String`         | Thay thế chuỗi con khớp chính xác.                   | `"Hello".replace("ll", "y")` $\to$ `"Heyo"`                  |
+|                           | `replaceAll(String regex, String repl)`                     | `String`         | Thay thế tất cả chuỗi khớp regex.                    | `"a1b2".replaceAll("\\d", "*")` $\to$ `"a*b*"`               |
+|                           | `replaceFirst(String regex, String repl)`                   | `String`         | Thay thế chuỗi đầu tiên khớp regex.                  | `"a1b2".replaceFirst("\\d", "*")` $\to$ `"a*b2"`             |
+|                           | `toUpperCase()`                                             | `String`         | Chuyển toàn bộ chuỗi thành chữ hoa.                  | `"Java".toUpperCase()` $\to$ `"JAVA"`                        |
+|                           | `toLowerCase()`                                             | `String`         | Chuyển toàn bộ chuỗi thành chữ thường.               | `"Java".toLowerCase()` $\to$ `"java"`                        |
+|                           | `trim()`                                                    | `String`         | Loại bỏ khoảng trắng ở hai đầu chuỗi.                | `" a ".trim()` $\to$ `"a"`                                   |
+|                           | `strip()`                                                   | `String`         | Loại bỏ khoảng trắng Unicode ở hai đầu.              | `"\u2000a\u2000".strip()` $\to$ `"a"`                        |
+|                           | `stripLeading()`                                            | `String`         | Loại bỏ khoảng trắng ở đầu chuỗi.                    | `" a".stripLeading()` $\to$ `"a"`                            |
+|                           | `stripTrailing()`                                           | `String`         | Loại bỏ khoảng trắng ở cuối chuỗi.                   | `"a ".stripTrailing()` $\to$ `"a"`                           |
+|                           | `concat(String str)`                                        | `String`         | Nối chuỗi `str` vào cuối chuỗi hiện tại.             | `"a".concat("b")` $\to$ `"ab"`                               |
+|                           | `repeat(int count)`                                         | `String`         | Lặp lại chuỗi `count` lần.                           | `"a".repeat(3)` $\to$ `"aaa"`                                |
+|                           | `String.format(String fmt, Object... args)`                 | `String`         | Định dạng chuỗi tĩnh theo chuẩn C-style.             | `String.format("%s: %d", "A", 1)` $\to$ `"A: 1"`             |
+|                           | `formatted(Object... args)`                                 | `String`         | Định dạng chuỗi không tĩnh (Java 15+).               | `"%s: %d".formatted("A", 1)` $\to$ `"A: 1"`                  |
+| **Chuyển đổi & Khác**     | `split(String regex)`                                       | `String[]`       | Phân tách chuỗi thành mảng theo regex.               | `"a-b".split("-")` $\to$ `["a", "b"]`                        |
+|                           | `split(String regex, int limit)`                            | `String[]`       | Phân tách chuỗi với giới hạn số phần tử.             | `"a-b-c".split("-", 2)` $\to$ `["a", "b-c"]`                 |
+|                           | `String.join(CharSequence delim, CharSequence... elements)` | `String`         | Ghép các phần tử lại với nhau bằng dấu phân tách.    | `String.join("-", "a", "b")` $\to$ `"a-b"`                   |
+|                           | `toCharArray()`                                             | `char[]`         | Chuyển chuỗi thành mảng ký tự.                       | `"Hi".toCharArray()` $\to$ `['H', 'i']`                      |
+|                           | `valueOf(Object obj)`                                       | `String`         | Chuyển đối tượng/kiểu nguyên thủy sang String.       | `String.valueOf(123)` $\to$ `"123"`                          |
+|                           | `chars()`                                                   | `IntStream`      | Trả về stream các mã ASCII/Unicode của ký tự.        | `"A".chars()` $\to$ Stream chứa `65`                         |
+|                           | `getBytes()`                                                | `byte[]`         | Mã hóa chuỗi thành mảng byte (default charset).      | `"A".getBytes()` $\to$ `[65]`                                |
+|                           | `lines()`                                                   | `Stream<String>` | Tách chuỗi theo các dòng.                            | `"a\nb".lines()` $\to$ Stream `["a", "b"]`                   |
+|                           | `intern()`                                                  | `String`         | Đưa chuỗi vào String Pool và trả về tham chiếu.      | `s.intern()` $\to$ Tham chiếu trong pool                     |
 
 ---
 
