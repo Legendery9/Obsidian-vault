@@ -27,4 +27,10 @@
 	- [x] Tương tự "02 - Obsidian system" ✅ 2026-08-18
 - [x] "12 - Learning" ✅ 2026-08-18
 	- [x] Tương tự "02 - Obsidian system" ✅ 2026-08-18
-- [ ] 
+---
+- [ ] "08 - Java Collections and Containers" bổ sung thêm 
+	- [ ] Khi sử dụng `Collections` và `Containers` với biến hoặc entity.
+	- [ ] Các CHUỖI lệnh phổ biến (VD: statements  trong statements, ....) được sử dụng với nhau để thực hiện 1 yêu cầu cụ thể (ví dụ: [[04 - Contains Id]]).
+- [ ] "02 - Base Conversion" Chưa rõ:
+	- [ ] Giải thích bằng code java thay vì python.
+	- [ ] Công thức tổng quát chưa giải thích rõ hết các biến được sử dụng (Nó là gì, có tác dụng gì, có công thức tính hay không và nếu có thì tính như nào, có lưu ý gì, ví dụ nếu có).

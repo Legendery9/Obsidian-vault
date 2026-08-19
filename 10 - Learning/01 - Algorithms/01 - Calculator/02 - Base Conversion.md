@@ -17,9 +17,9 @@ Chuyển đổi cơ số là quá trình thay đổi cách biểu diễn một s
 
 ### 2 Công thức cốt lõi (Nguyên lý 20/80)
 
-| Chiều chuyển đổi | Thuật toán sử dụng | Công thức toán học / Cú pháp |
-| :--- | :--- | :--- |
-| **Hệ bất kỳ (radix $R$) $\to$ Thập phân (10)** | **Sơ đồ Horner** | $\text{result} = \text{result} \times R + d$<br>(Duyệt chữ số $d$ từ trái sang phải) |
+| Chiều chuyển đổi                               | Thuật toán sử dụng        | Công thức toán học / Cú pháp                                                                          |
+| :--------------------------------------------- | :------------------------ | :---------------------------------------------------------------------------------------------------- |
+| **Hệ bất kỳ (radix $R$) $\to$ Thập phân (10)** | **Sơ đồ Horner**          | $\text{result} = \text{result} \times R + d$<br>(Duyệt chữ số $d$ từ trái sang phải)                  |
 | **Thập phân (10) $\to$ Hệ bất kỳ (radix $R$)** | **Chia lấy dư liên tiếp** | - Lấy phần dư $n \pmod R$ làm chữ số từ phải sang trái.<br>- Tiếp tục chia nguyên $n \mathbin{//} R$. |
 
 ---
