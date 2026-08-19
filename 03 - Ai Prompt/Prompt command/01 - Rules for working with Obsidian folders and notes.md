@@ -1,4 +1,6 @@
-## Quy tắc áp dụng chung (tóm tắt)
+> [!note] 
+> **Các quy tắc này phải luôn được tuân thủ khi làm việc với Obsidian, cho đến khi người dùng trực tiếp yêu cầu thay đổi hoặc hủy bỏ chúng.**
+## Quy tắc áp dụng chung
 - **Chuẩn hóa đặt tên:** Sử dụng định dạng `{index} - {context}` cho thư mục và tệp tin, và `context` phải là từ tiếng anh.
 - **Khử trùng lặp:** Không lặp lại kiến thức, dùng Obsidian wikilink `[[tên-file]]` để tham chiếu.
 - **Nguyên tắc 20/80:** Nội dung ngắn gọn, tập trung 20% cốt lõi đem lại 80% giá trị.
@@ -10,3 +12,4 @@
 	- Đánh dấu checkbox đã xong.
 	- Ghi rõ folder/file nào đã đổi tên, nội dung nào đã hoàn thiện/thêm bảng.
 	- Nếu dừng giữa chừng: ghi rõ đang làm dở folder nào, phần nào, để phiên sau (hoặc khi chuyển sang folder tiếp theo) tiếp tục đúng chỗ. **Xử lý tuần tự từng folder** (VD: xong hẳn `02 - Obsidian system` mới sang `05 - Coding environment`, v.v.) trừ khi người dùng yêu cầu khác.
+
