@@ -38,6 +38,7 @@
 - [x] Bổ sung đầy đủ method/statement còn thiếu vào bảng `01 - String` ✅ 2026-08-19
 - [x] Đổi tên folder `String and StringBuilder` thành `04 - String, StringBuilder and StringBuffer` ✅ 2026-08-19
 - [x] Thêm file `StringBuffer.md` + bảng so sánh với StringBuilder ✅ 2026-08-19
+- [x] Thêm file `03 - Format Specifiers.md` vào `07 - Regex and String Matching` ✅ 2026-08-19
 
 ## Quy tắc áp dụng (tóm tắt)
 - **Chuẩn hóa đặt tên:** Sử dụng định dạng `{index} - {context}` cho thư mục và tệp tin.
@@ -132,6 +133,11 @@
   - Đổi tên thư mục `04 - String and StringBuilder` thành `04 - String, StringBuilder and StringBuffer`.
   - Tạo tệp `03 - StringBuffer.md` bao gồm bảng so sánh với StringBuilder.
 - **Đã thay đổi:** Mở rộng hệ thống tài liệu Java Core để bao quát nhiều chủ đề nâng cao và chi tiết phương thức.
+
+### [2026-08-19 22:55]
+- **Đã làm:**
+  - Thêm tệp mới `03 - Format Specifiers.md` vào thư mục `07 - Regex and String Matching` để lưu trữ tài liệu hướng dẫn Format Specifiers.
+- **Đã thay đổi:** Thêm hướng dẫn định dạng chuỗi trong Java bao gồm cấu trúc, bảng specifiers, bảng statement/method và ví dụ minh họa chạy được.
 
 ## Trạng thái hiện tại
 - **Đã hoàn thành:** 100% checklist và yêu cầu bổ sung của vault "06 - Java Program" phần Java Core.
