@@ -1,6 +1,11 @@
 ## Quy tắc áp dụng chung (tóm tắt)
-
 - **Chuẩn hóa đặt tên:** Sử dụng định dạng `{index} - {context}` cho thư mục và tệp tin, và `context` phải là từ tiếng anh.
 - **Khử trùng lặp:** Không lặp lại kiến thức, dùng Obsidian wikilink `[[tên-file]]` để tham chiếu.
 - **Nguyên tắc 20/80:** Nội dung ngắn gọn, tập trung 20% cốt lõi đem lại 80% giá trị.
 - **Định dạng Visual:** Phân tách heading bằng `---`. Sử dụng callouts thích hợp (`[!abstract]`, `[!info]`, `[!warning]`, `[!note]`), tìm hiểu thêm tại [[2 Obsidian format]]. Ví dụ code dùng block `java` và trình bày đối lập Do/Don't.
+- **Ghi log:** Sau mỗi mục hoàn thành, cập nhật đúng file log tương ứng với folder đang làm:
+	- Mỗi folder có **1 file log riêng**, tại `03 - Ai Prompt/Prompt progress - implementation`, cấu trúc giống hệt các file log trước.
+		- Đọc file log tương ứng trước khi bắt đầu làm folder đó. Nếu chưa có → tạo mới theo đúng cấu trúc chuẩn (Checklist tổng / Quy tắc áp dụng / Nhật ký thay đổi / Trạng thái hiện tại / Lưu ý).
+	- Đánh dấu checkbox đã xong.
+	- Ghi rõ folder/file nào đã đổi tên, nội dung nào đã hoàn thiện/thêm bảng.
+	- Nếu dừng giữa chừng: ghi rõ đang làm dở folder nào, phần nào, để phiên sau (hoặc khi chuyển sang folder tiếp theo) tiếp tục đúng chỗ. **Xử lý tuần tự từng folder** (VD: xong hẳn `02 - Obsidian system` mới sang `05 - Coding environment`, v.v.) trừ khi người dùng yêu cầu khác.

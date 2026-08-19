@@ -31,8 +31,13 @@
 - [x] Bổ sung bảng statement/method cho `02 - Objects` ✅ 2026-08-18
 - [x] Thêm file `LocalDate` vào `Java Advanced Basics` ✅ 2026-08-18
 - [x] Bổ sung chi tiết absolute/relative path + 4 ví dụ thao tác cho `Java File IO` ✅ 2026-08-18
-
-
+- [x] Bổ sung cách dùng Collections/Containers với entity vào `08 - Java Collections and Containers` ✅ 2026-08-19
+- [x] Tạo các file "chuỗi lệnh" theo yêu cầu cụ thể (Contains Id, Filter Map Collect, Sort Multiple, Grouping By, Remove Duplicates) trong `08 - Java Collections and Containers` ✅ 2026-08-19
+- [x] Đổi code Python → Java + giải thích rõ biến trong công thức tại `02 - Base Conversion` ✅ 2026-08-19
+- [x] Thêm 8 file mới vào `09 - Java Advanced Basics`: DateTimeFormatter, Collection, Comparator, Objects (util), Optional, BigDecimal, UUID, System ✅ 2026-08-19
+- [x] Bổ sung đầy đủ method/statement còn thiếu vào bảng `01 - String` ✅ 2026-08-19
+- [x] Đổi tên folder `String and StringBuilder` thành `04 - String, StringBuilder and StringBuffer` ✅ 2026-08-19
+- [x] Thêm file `StringBuffer.md` + bảng so sánh với StringBuilder ✅ 2026-08-19
 
 ## Quy tắc áp dụng (tóm tắt)
 - **Chuẩn hóa đặt tên:** Sử dụng định dạng `{index} - {context}` cho thư mục và tệp tin.
@@ -117,6 +122,17 @@
 - **Đã thay đổi:** Mở rộng tài liệu về Java Objects, LocalDate và Java File I/O trong Java Core.
 
 
+### [2026-08-19 14:15]
+- **Đã làm:**
+  - Bổ sung hướng dẫn cách dùng Collections/Containers với Custom Entities (`20 - Collections with Custom Entities.md`).
+  - Tạo 5 tệp "chuỗi lệnh" xử lý phổ biến vào thư mục con `statement-chains`.
+  - Chuyển ví dụ Python sang Java và chi tiết hóa công thức, biến bằng LaTeX trong `02 - Base Conversion.md`.
+  - Tạo thêm 8 tệp mới cho `09 - Java Advanced Basics` (từ index 07 đến 14).
+  - Bổ sung toàn bộ phương thức String đầy đủ và ví dụ minh họa vào `01 - String.md`.
+  - Đổi tên thư mục `04 - String and StringBuilder` thành `04 - String, StringBuilder and StringBuffer`.
+  - Tạo tệp `03 - StringBuffer.md` bao gồm bảng so sánh với StringBuilder.
+- **Đã thay đổi:** Mở rộng hệ thống tài liệu Java Core để bao quát nhiều chủ đề nâng cao và chi tiết phương thức.
+
 ## Trạng thái hiện tại
 - **Đã hoàn thành:** 100% checklist và yêu cầu bổ sung của vault "06 - Java Program" phần Java Core.
 - **Đang làm dở / chưa làm tới:** Không có.
@@ -125,3 +141,4 @@
 - Đã sửa lỗi logic quan trọng trong phần HTTP Status Code (đảo ngược mã 400 và 404 trong tệp HTML gốc).
 - Đã thêm cấu hình mẫu try-with-resources để giải phóng tài nguyên File I/O và nguyên tắc sử dụng hằng số an toàn với Wrapper Classes.
 - Lưu ý đặc biệt về `Math.round` với số thực âm đã được đưa vào tệp Math.
+- Chú ý đến việc sử dụng `ResolverStyle.STRICT` và `IsoChronology.INSTANCE` trong validate ngày tháng để tránh cơ chế `SMART` tự sửa đổi dữ liệu ngày không tồn tại và lỗi Era của JVM.

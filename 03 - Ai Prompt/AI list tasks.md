@@ -28,9 +28,38 @@
 - [x] "12 - Learning" ✅ 2026-08-18
 	- [x] Tương tự "02 - Obsidian system" ✅ 2026-08-18
 ---
-- [ ] "08 - Java Collections and Containers" bổ sung thêm 
-	- [ ] Khi sử dụng `Collections` và `Containers` với biến hoặc entity.
+- [ ] "08 - Java Collections and Containers" bổ sung thêm:
+	- [ ] Khi sử dụng các `Collections` và `Containers` với biến hoặc entity.
 	- [ ] Các CHUỖI lệnh phổ biến (VD: statements  trong statements, ....) được sử dụng với nhau để thực hiện 1 yêu cầu cụ thể (ví dụ: [[04 - Contains Id]]).
 - [ ] "02 - Base Conversion" Chưa rõ:
 	- [ ] Giải thích bằng code java thay vì python.
 	- [ ] Công thức tổng quát chưa giải thích rõ hết các biến được sử dụng (Nó là gì, có tác dụng gì, có công thức tính hay không và nếu có thì tính như nào, có lưu ý gì, ví dụ nếu có).
+- [ ] "09 - Java Advanced Basics" Bổ sung thêm các file md:
+	- [ ] DateTimeFormatter, cần liên kết với "03 - LocalDate" bằng Obsidian format `[[03 - LocalDate]]`.
+	- [ ] Collection.
+	- [ ] Comparator.
+	- [ ] Objects.
+	- [ ] Optional.
+	- [ ] BigDecimal.
+	- [ ] UUID.
+	- [ ] System.
+- [ ] "01 - String" Còn thiếu các statements sau và cần bổ sung:
+	- [ ] Hãy bổ sung thêm đầy đủ toàn bộ mehod hoặc statement cho String trong java nhất có thể.
+	- [ ] Ví dụ: replaceAll(), format(),.....
+- [ ] "01 - Java Core" Tạo thêm 1 folder `A` chứa các file md, mỗi file md sẽ chứa các java code block, method, trích, statements và lệnh kết hợp với nhau để hoàn thành DUY NHẤT 1 yêu cầu cụ thể:
+	- [ ] Mỗi file md cần phải có(LƯU Ý: ghi log implementation dành riêng cho folder `A` đó phải có):
+		- [ ] Giải thích và phân tích yêu cầu.
+		- [ ] flow hoặc map giữa các statement hoặc method
+		- [ ] Các thư viện cần sử dụng.
+		- [ ] Toàn bộ code block, class và method (Được code ngắn gọn nhất có thể).
+		- [ ] Tuần theo [[01 - Java Code Conventions]]
+		- [ ] Ghi chú hoặc lưu ý.
+		- [ ] Mỗi hành vi mà yêu cầu đưa ra sẽ có 1 method tương ứng thực hiện hành vi đó.
+	- [ ] Các yêu cầu cho từng file md:
+		- [ ] Tạo, nhập và lấy ma trận với kích cỡ tuỳ chỉnh, thực hiện phép tính giữa các ma trận.
+		- [ ] Tạo, nhập văn bản (với file), lấy, đọc, copy và dịch chuyển folder hoặc các file trong folder hoặc file cụ thể.
+		- [ ] Nhập và validate 1 Attribute là 1 String sao cho các LocaleDate nhận các giá trị "dd-MM-yyyy", "dd-MMM-yyyy", "dd-MMMM-yyyy", mà không lỗi khi nhậm năm nhuận.
+- [ ] "04 - String and StringBuilder" cần
+	- [ ] Dổi lại tên.
+	- [ ] Thêm file StringBuffer md. 
+		- [ ] Yêu cầu thêm với file: thêm bảng so sanh vưới `StringBuilder`
