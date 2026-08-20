@@ -101,7 +101,37 @@ a^2 + b^2 = c^2
 $$
 ```
 Không đặt display equation trên cùng một dòng với văn bản.
-## 5. Nguyên tắc ưu tiên
+
+## 5. Advanced Text Formatting
+### 5.1. Đổi màu chữ
+- Cú pháp: `<font color="#{colorCode}">context</font>`
+- Sử dụng mã màu **Hexadecimal** (ví dụ: `<font color="#FF0000">text</font>`).
+### 5.2. Chỉ số dưới (subscript)
+- Cú pháp: `<sub>{context}</sub>` (ví dụ: `H<sub>2</sub>O`).
+### 5.3. Chỉ số trên (superscript)
+- Cú pháp: `<sup>{context}</sup>` (ví dụ: `m<sup>2</sup>`).
+### 5.4. Highlight văn bản theo màu tuỳ chọn
+- Cú pháp: `<mark style="background:#{colorCode}">{context}</mark>`
+- Sử dụng mã màu **Hexadecimal** (ví dụ: `<mark style="background:#FFFF00">text</mark>`).
+
+## 6. Links & Embeds
+### 6.1. Sử dụng linh hoạt Wikilink
+- `[[file.md]]` → **liên kết** đến file/note (chỉ tạo link dẫn tới file, không hiển thị nội dung).
+- `![[file.md]]` → **nhúng (embed)** toàn bộ nội dung file đó vào note hiện tại.
+- Agent tự quyết định dùng cái nào tuỳ ngữ cảnh:
+  - Cần **tham chiếu nhanh** → dùng `[[...]]`.
+  - Cần **hiển thị nội dung trực tiếp** ngay tại chỗ (ví dụ: nhúng bảng tham chiếu dùng chung nhiều nơi) → dùng `![[...]]`.
+### 6.2. Link ra ngoài (external/markdown link)
+- Cú pháp: `[Tên hiển thị](URL)`
+  - `[...]` → text hiển thị cho người đọc.
+  - `(...)` → địa chỉ đích (URL hoặc đường dẫn).
+
+## 7. Obsidian & Plugins
+- Agent **được phép tự do sử dụng** mọi tính năng định dạng của Obsidian và các plugin đang có, miễn thông tin/tài liệu về tính năng đó đã có sẵn tại folder:
+  `Obsidian-vault/02 - Obsidian context`
+- **Không cần thông báo** trong nội dung file `.md` (hay bất kỳ đâu) là đã dùng tính năng gì hoặc plugin nào — áp dụng trực tiếp, tự nhiên như một phần định dạng bình thường của ghi chú.
+
+## 8. Nguyên tắc ưu tiên
 Khi áp dụng các quy tắc trên, ưu tiên theo thứ tự:
 1. **Đúng nội dung và chính xác về mặt kỹ thuật.**
 2. **Cấu trúc rõ ràng, dễ đọc.**

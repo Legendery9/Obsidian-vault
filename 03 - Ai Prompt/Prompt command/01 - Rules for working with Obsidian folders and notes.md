@@ -46,7 +46,7 @@ Tập trung vào **20% kiến thức cốt lõi mang lại 80% giá trị**.
 ---
 
 ## 4. Visual Formatting
-- Tuân thủ đầy đủ quy tắc định dạng được quy định tại [[02 - Obsidian format]].
+- Tuân thủ đầy đủ quy tắc định dạng được quy định tại [[02 - Obsidian format OPTIMIZATION]].
 - Phân tách các heading lớn bằng `---`.
 - Sử dụng callout phù hợp:
 ```markdown

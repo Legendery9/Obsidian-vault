@@ -3,6 +3,7 @@
 - [x] Đặt lại tên toàn bộ file `.md` ✅ 2026-08-18
 - [x] Hoàn thiện nội dung theo 20/80 cho toàn bộ file ✅ 2026-08-18
 - [x] Sắp xếp lại `01 - Features` theo thứ tự Callout → Latex → Markup ✅ 2026-08-18
+- [x] Bổ sung các quy tắc định dạng mới vào file `02 - Obsidian format OPTIMIZATION.md` ✅ 2026-08-20
 
 ## Quy tắc áp dụng (tóm tắt)
 - **Chuẩn hóa đặt tên:** Sử dụng định dạng `{index} - {context}` cho thư mục và tệp tin.
@@ -11,6 +12,10 @@
 - **Định dạng Visual:** Phân tách heading bằng `---`. Sử dụng callouts thích hợp. Ví dụ code dùng block ngôn ngữ tương ứng.
 
 ## Nhật ký thay đổi
+### [2026-08-20 23:06]
+- **Đã làm:**
+  - Bổ sung 7 quy tắc định dạng mới vào `02 - Obsidian format OPTIMIZATION.md` (Đổi màu chữ, subscript, superscript, highlight văn bản, sử dụng linh hoạt Wikilink, link ra ngoài, được phép sử dụng tính năng Obsidian & plugin).
+
 ### [2026-08-18 23:40]
 - **Đã làm:**
   - Đổi tên thư mục `Features` → `01 - Features` và `Plugins` → `02 - Plugins`.
