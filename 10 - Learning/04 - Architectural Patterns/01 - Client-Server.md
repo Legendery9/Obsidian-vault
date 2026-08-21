@@ -29,7 +29,7 @@ sequenceDiagram
     actor User as Người dùng
     participant Client as Client (Browser/App)
     participant Server as Server (Web/API)
-    database DB as Database
+    participant DB as Database
 
     User->>Client: Tương tác (nhấp nút, nhập form)
     Client->>Server: Gửi Request (HTTP POST /users)

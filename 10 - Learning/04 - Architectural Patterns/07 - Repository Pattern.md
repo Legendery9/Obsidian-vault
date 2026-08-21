@@ -28,7 +28,7 @@ sequenceDiagram
     participant Service as Business Service
     participant RepoInterface as Repository Interface
     participant RepoImpl as Repository Implementation
-    database DB as SQL Database
+    participant DB as SQL Database
 
     Service->>RepoInterface: Gọi findById(id)
     Note over RepoInterface: Trừu tượng hóa
