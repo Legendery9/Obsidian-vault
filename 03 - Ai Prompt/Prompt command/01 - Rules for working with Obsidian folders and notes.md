@@ -207,3 +207,159 @@ Khi có xung đột giữa các yêu cầu trong quá trình xử lý, ưu tiên
 6. **Tính nhất quán về cấu trúc và Visual Formatting.**
 > [!important]  
 > Các quy tắc này tiếp tục được áp dụng trong các phiên làm việc sau **cho đến khi người dùng trực tiếp yêu cầu thay đổi hoặc hủy bỏ**.
+
+---
+
+## 10. Quy tắc nguồn tham khảo
+- **Header nguồn tham khảo đầu mỗi file `.md`**:
+    - Tại đầu mỗi file `.md`, tạo một header riêng chứa các Markdown link `[Tên hiển thị](URL)` đến những website đã thực sự được dùng làm tài nguyên, dữ liệu, thông tin hoặc nguồn tham khảo khi viết nội dung file đó.
+    - Chỉ thêm website thực sự được sử dụng trong nội dung — không thêm cho có, không thêm hàng loạt link "liên quan chủ đề" nếu không thực sự dùng để lấy thông tin.
+    - Nếu phải chọn giữa nhiều nguồn cùng cung cấp thông tin đã dùng → ưu tiên ghi nguồn chính thống, uy tín nhất (official docs trước, nguồn tổng hợp/cộng đồng sau).
+    - Nếu file không sử dụng tài nguyên từ website bên ngoài nào (Ví dụ: nội dung tự viết dựa trên kiến thức đã có sẵn trong vault, hoặc chỉ tổng hợp từ file khác) → không cần thêm header này.
+    - Header nguồn tham khảo phải nằm trước nội dung chính của file (trước mọi heading `##` nội dung).
+- **Áp dụng cho các file đã tạo trước đó (không bắt buộc gấp)**:
+    - Với các file `.md` đã tạo ở các phiên trước: nếu nội dung trong đó thực sự đã dựa trên/tham khảo một nguồn cụ thể (dù không ghi rõ lúc viết) → bổ sung header nguồn khi rà soát lại folder đó.
+    - Không cần chủ động thêm link "cho đủ" nếu không chắc chắn nội dung trước đó có thực sự tham khảo nguồn nào — tuân đúng nguyên tắc "chỉ ghi nguồn thực sự dùng" ở trên.
+- **Ghi log**:
+    - Thực hiện đúng theo quy tắc ghi log đã nêu tại file rules: cập nhật `implementation.md` tương ứng của folder đang xử lý khi áp dụng quy tắc header nguồn tham khảo cho file mới hoặc file rà soát lại.
+
+---
+
+## 11. Bảng danh sách website đáng tin cậy
+Dùng làm nguồn tra cứu ưu tiên cho người dùng, người đọc, và AI khi cần chọn nguồn tham khảo cho header ở mục 10 (không bắt buộc chỉ được dùng nguồn trong danh sách này — đây là danh sách gợi ý/ưu tiên, có thể dùng nguồn uy tín khác nếu phù hợp hơn với nội dung thực tế đã dùng).
+
+### Lập trình / IT
+| Website | Mô tả |
+| :--- | :--- |
+| [Oracle Java Documentation](https://docs.oracle.com/en/java/) | Tài liệu chính thức về Java |
+| [MDN Web Docs](https://developer.mozilla.org/) | Tài liệu HTML, CSS, JavaScript và Web API |
+| [Spring Documentation](https://docs.spring.io/) | Tài liệu chính thức về Spring và Spring Boot |
+| [Microsoft Learn](https://learn.microsoft.com/) | Tài liệu C#, .NET, Azure, SQL Server, Windows... |
+| [Git Documentation](https://git-scm.com/doc) | Tài liệu chính thức về Git |
+| [Docker Docs](https://docs.docker.com/) | Tài liệu về Docker |
+| [Linux Documentation](https://www.kernel.org/doc/) | Tài liệu về Linux và Linux Kernel |
+| [PostgreSQL Documentation](https://www.postgresql.org/docs/) | Tài liệu chính thức về PostgreSQL |
+| [MySQL Documentation](https://dev.mysql.com/doc/) | Tài liệu chính thức về MySQL |
+| [Python Documentation](https://docs.python.org/) | Tài liệu chính thức về Python |
+| [Stack Overflow](https://stackoverflow.com/) | Hỏi đáp lập trình |
+| [GeeksforGeeks](https://www.geeksforgeeks.org/) | Thuật toán, cấu trúc dữ liệu, Java, C++, Python, CS |
+| [Baeldung](https://www.baeldung.com/) | Java, Spring, Spring Boot, Hibernate |
+| [W3Schools](https://www.w3schools.com/) | HTML, CSS, JavaScript, SQL, Java, Python |
+| [freeCodeCamp](https://www.freecodecamp.org/) | Học lập trình qua bài học/thực hành |
+| [Dev.to](https://dev.to/) | Bài viết, kinh nghiệm cộng đồng developer |
+
+### Tra cứu kiến thức tổng quát
+| Website | Mô tả |
+| :--- | :--- |
+| [Wikipedia](https://www.wikipedia.org/) | Tra cứu nhanh, tổng quan nhiều chủ đề |
+| [Britannica](https://www.britannica.com/) | Kiến thức bách khoa |
+| [Our World in Data](https://ourworldindata.org/) | Dữ liệu xã hội, kinh tế, môi trường, toàn cầu |
+| [Google](https://www.google.com/) | Công cụ tìm kiếm |
+| [Internet Archive](https://archive.org/) | Lưu trữ sách, tài liệu, website |
+
+### Nghiên cứu khoa học / Academic
+| Website | Mô tả |
+| :--- | :--- |
+| [Google Scholar](https://scholar.google.com/) | Bài báo, luận văn, sách, tài liệu học thuật |
+| [Semantic Scholar](https://www.semanticscholar.org/) | Tìm kiếm nghiên cứu khoa học |
+| [PubMed](https://pubmed.ncbi.nlm.nih.gov/) | Nghiên cứu y học, khoa học sự sống |
+| [JSTOR](https://www.jstor.org/) | Tạp chí, sách, khoa học xã hội và nhân văn |
+| [ScienceDirect](https://www.sciencedirect.com/) | Bài báo, nghiên cứu khoa học/kỹ thuật |
+| [IEEE Xplore](https://ieeexplore.ieee.org/) | CS, Engineering, Technology, Electronics |
+| [ACM Digital Library](https://dl.acm.org/) | Nghiên cứu, tài liệu Computer Science |
+| [Springer Nature](https://link.springer.com/) | Sách, bài báo, nghiên cứu khoa học |
+| [arXiv](https://arxiv.org/) | Preprint CS, Mathematics, Physics... |
+| [DOAJ](https://doaj.org/) | Tạp chí khoa học truy cập mở |
+| [CORE](https://core.ac.uk/) | Nghiên cứu khoa học truy cập mở |
+
+### Toán / Statistics
+| Website | Mô tả |
+| :--- | :--- |
+| [Wolfram MathWorld](https://mathworld.wolfram.com/) | Từ điển, tài liệu tham khảo toán học |
+| [WolframAlpha](https://www.wolframalpha.com/) | Tính toán, giải toán, phân tích dữ liệu |
+| [Desmos](https://www.desmos.com/) | Vẽ, tương tác đồ thị toán học |
+| [GeoGebra](https://www.geogebra.org/) | Hình học, đại số, calculus |
+| [Statlect](https://www.statlect.com/) | Probability và Statistics |
+
+### Database / SQL
+| Website | Mô tả |
+| :--- | :--- |
+| [SQL Server Documentation](https://learn.microsoft.com/en-us/sql/) | Tài liệu chính thức Microsoft SQL Server |
+| [PostgreSQL Documentation](https://www.postgresql.org/docs/) | Tài liệu chính thức PostgreSQL |
+| [MySQL Documentation](https://dev.mysql.com/doc/) | Tài liệu chính thức MySQL |
+| [Oracle Database Documentation](https://docs.oracle.com/en/database/) | Tài liệu chính thức Oracle Database |
+| [SQLBolt](https://sqlbolt.com/) | Học SQL qua bài tập tương tác |
+| [Mode SQL Tutorial](https://mode.com/sql-tutorial/) | Học SQL kết hợp phân tích dữ liệu |
+
+### Computer Science / Algorithms
+| Website | Mô tả |
+| :--- | :--- |
+| [VisuAlgo](https://visualgo.net/) | Trực quan hoá cấu trúc dữ liệu, thuật toán |
+| [CP-Algorithms](https://cp-algorithms.com/) | Thuật toán, Competitive Programming |
+| [GeeksforGeeks](https://www.geeksforgeeks.org/) | Cấu trúc dữ liệu, thuật toán, CS |
+| [LeetCode](https://leetcode.com/) | Luyện thuật toán, coding interview |
+| [HackerRank](https://www.hackerrank.com/) | Bài tập lập trình, kiểm tra kỹ năng |
+| [Codeforces](https://codeforces.com/) | Competitive Programming |
+| [Big-O Cheat Sheet](https://www.bigocheatsheet.com/) | Tra cứu Big-O, độ phức tạp thuật toán |
+
+### Tin tức / Thông tin thời sự
+| Website | Mô tả |
+| :--- | :--- |
+| [Reuters](https://www.reuters.com/) | Tin tức quốc tế |
+| [BBC](https://www.bbc.com/) | Tin tức quốc tế |
+| [AP News](https://apnews.com/) | Tin tức quốc tế |
+| [VnExpress](https://vnexpress.net/) | Tin tức Việt Nam và quốc tế |
+| [VietnamPlus](https://www.vietnamplus.vn/) | Tin tức Việt Nam và quốc tế |
+| [Cổng thông tin điện tử Chính phủ](https://chinhphu.vn/) | Văn bản chính thức Chính phủ Việt Nam |
+
+### Dữ liệu / Statistics / Economics
+| Website | Mô tả |
+| :--- | :--- |
+| [Our World in Data](https://ourworldindata.org/) | Dữ liệu toàn cầu xã hội, kinh tế, môi trường, sức khỏe |
+| [World Bank Data](https://data.worldbank.org/) | Dữ liệu kinh tế, phát triển toàn cầu |
+| [UN Data](https://data.un.org/) | Dữ liệu Liên Hợp Quốc |
+| [WHO Data](https://data.who.int/) | Dữ liệu y tế, sức khỏe toàn cầu |
+| [IMF Data](https://www.imf.org/en/Data) | Dữ liệu kinh tế, tài chính |
+| [OECD Data Explorer](https://data-explorer.oecd.org/) | Dữ liệu kinh tế, xã hội, phát triển |
+| [Statista](https://www.statista.com/) | Thống kê, dữ liệu thị trường |
+
+### Sách / Tài liệu
+| Website | Mô tả |
+| :--- | :--- |
+| [Google Books](https://books.google.com/) | Tìm kiếm, xem thông tin sách |
+| [Internet Archive](https://archive.org/) | Sách, tài liệu lưu trữ |
+| [Project Gutenberg](https://www.gutenberg.org/) | Sách điện tử public domain |
+| [OpenStax](https://openstax.org/) | Giáo trình đại học miễn phí, OER |
+| [Open Library](https://openlibrary.org/) | Thư viện sách trực tuyến |
+
+### GitHub / Open Source
+| Website | Mô tả |
+| :--- | :--- |
+| [GitHub](https://github.com/) | Source code, Git repository, Open Source |
+| [GitLab](https://gitlab.com/) | Git repository, CI/CD, DevOps |
+| [Apache Software Foundation](https://www.apache.org/) | Dự án Open Source thuộc Apache |
+| [Maven Central](https://central.sonatype.com/) | Kho Java packages/dependencies |
+| [npm](https://www.npmjs.com/) | Kho JavaScript packages |
+| [PyPI](https://pypi.org/) | Kho Python packages |
+
+### Video / Visual Learning
+| Website | Mô tả |
+| :--- | :--- |
+| [YouTube](https://www.youtube.com/) | Video học tập, tutorial, bài giảng |
+| [3Blue1Brown](https://www.3blue1brown.com/) | Toán học trực quan hoá |
+| [Computerphile](https://www.youtube.com/@Computerphile) | Computer Science, công nghệ |
+| [TED-Ed](https://ed.ted.com/) | Bài học trực quan nhiều chủ đề |
+
+### Nguồn tin chính thức / Primary Sources
+| Website | Mô tả |
+| :--- | :--- |
+| [United Nations](https://www.un.org/) | Thông tin, tài liệu chính thức Liên Hợp Quốc |
+| [World Bank](https://www.worldbank.org/) | Thông tin, dữ liệu kinh tế, phát triển |
+| [WHO](https://www.who.int/) | Thông tin chính thức y tế, sức khỏe |
+| [IMF](https://www.imf.org/) | Thông tin kinh tế, tài chính quốc tế |
+| [OECD](https://www.oecd.org/) | Dữ liệu, nghiên cứu, chính sách kinh tế - xã hội |
+
+---
+
+> [!important]  
+> Các quy tắc này tiếp tục được áp dụng trong các phiên làm việc sau **cho đến khi người dùng trực tiếp yêu cầu thay đổi hoặc hủy bỏ**.

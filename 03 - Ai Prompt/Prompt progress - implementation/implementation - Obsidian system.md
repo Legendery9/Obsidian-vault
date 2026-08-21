@@ -4,14 +4,20 @@
 - [x] Hoàn thiện nội dung theo 20/80 cho toàn bộ file ✅ 2026-08-18
 - [x] Sắp xếp lại `01 - Features` theo thứ tự Callout → Latex → Markup ✅ 2026-08-18
 - [x] Bổ sung các quy tắc định dạng mới vào file `02 - Obsidian format OPTIMIZATION.md` ✅ 2026-08-20
+- [x] Bổ sung quy tắc Header nguồn tham khảo và Bảng website đáng tin cậy vào `01 - Rules for working with Obsidian folders and notes.md` ✅ 2026-08-21
 
 ## Quy tắc áp dụng (tóm tắt)
 - **Chuẩn hóa đặt tên:** Sử dụng định dạng `{index} - {context}` cho thư mục và tệp tin.
 - **Khử trùng lặp:** Không lặp lại kiến thức, dùng Obsidian wikilink `[[tên-file]]` để tham chiếu.
 - **Nguyên tắc 20/80:** Nội dung ngắn gọn, tập trung 20% cốt lõi đem lại 80% giá trị.
 - **Định dạng Visual:** Phân tách heading bằng `---`. Sử dụng callouts thích hợp. Ví dụ code dùng block ngôn ngữ tương ứng.
+- **Nguồn tham khảo:** Tạo header chứa link nguồn tham khảo đầu mỗi file `.md` nếu có sử dụng tài nguyên bên ngoài.
 
 ## Nhật ký thay đổi
+### [2026-08-21 07:45]
+- **Đã làm:**
+  - Cập nhật file `01 - Rules for working with Obsidian folders and notes.md`: Bổ sung Quy tắc 10 (Quy tắc nguồn tham khảo) và Quy tắc 11 (Bảng danh sách website đáng tin cậy) phục vụ việc ghi nhận nguồn tham khảo trong Vault.
+
 ### [2026-08-20 23:06]
 - **Đã làm:**
   - Bổ sung 7 quy tắc định dạng mới vào `02 - Obsidian format OPTIMIZATION.md` (Đổi màu chữ, subscript, superscript, highlight văn bản, sử dụng linh hoạt Wikilink, link ra ngoài, được phép sử dụng tính năng Obsidian & plugin).
