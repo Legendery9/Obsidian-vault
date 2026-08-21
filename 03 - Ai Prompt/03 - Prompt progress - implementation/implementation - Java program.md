@@ -39,6 +39,10 @@
 - [x] Đổi tên folder `String and StringBuilder` thành `04 - String, StringBuilder and StringBuffer` ✅ 2026-08-19
 - [x] Thêm file `StringBuffer.md` + bảng so sánh với StringBuilder ✅ 2026-08-19
 - [x] Thêm file `03 - Format Specifiers.md` vào `07 - Regex and String Matching` ✅ 2026-08-19
+- [x] Đổi tên `09 - Java Advanced Basics` $\rightarrow$ `10 - Java Advanced` và reindex các thư mục sau (10 $\rightarrow$ 11, 11 $\rightarrow$ 12, 12 $\rightarrow$ 13) ✅ 2026-08-21
+- [x] Tạo folder `09 - Statements and Control Flow` trong `01 - Java Core` ✅ 2026-08-21
+- [x] Thêm 4 file `.md` vào `09 - Statements and Control Flow` (Declaration, Conditions & Loops, Exception Handling, Special Statements) ✅ 2026-08-21
+- [x] Thêm file `06 - Lambda.md` vào `10 - Java Advanced` và đánh lại số index các file liên quan ✅ 2026-08-21
 
 ## Quy tắc áp dụng (tóm tắt)
 - **Chuẩn hóa đặt tên:** Sử dụng định dạng `{index} - {context}` cho thư mục và tệp tin.
@@ -138,6 +142,13 @@
 - **Đã làm:**
   - Thêm tệp mới `03 - Format Specifiers.md` vào thư mục `07 - Regex and String Matching` để lưu trữ tài liệu hướng dẫn Format Specifiers.
 - **Đã thay đổi:** Thêm hướng dẫn định dạng chuỗi trong Java bao gồm cấu trúc, bảng specifiers, bảng statement/method và ví dụ minh họa chạy được.
+
+### [2026-08-21 19:05]
+- **Đã làm:**
+  - Đổi tên thư mục `09 - Java Advanced Basics` thành `10 - Java Advanced` và cập nhật lại chỉ mục (index) của toàn bộ các thư mục phía sau trong `01 - Java Core` tăng lên 1 đơn vị.
+  - Tạo thư mục mới `09 - Statements and Control Flow` chứa 4 tệp tài liệu chi tiết: `01 - Declaration Statements.md`, `02 - Conditions and Loops.md`, `03 - Exception Handling and Built-in Exceptions.md`, và `04 - Special Statements.md`.
+  - Cập nhật chỉ mục các tệp tin từ `06` trở đi trong `10 - Java Advanced` để nhường chỗ cho tệp tin mới `06 - Lambda.md`.
+- **Đã thay đổi:** Đồng bộ hóa cấu trúc thư mục Java Core và bổ sung chuyên sâu kiến thức về Statements nền tảng cùng biểu thức Lambda.
 
 ## Trạng thái hiện tại
 - **Đã hoàn thành:** 100% checklist và yêu cầu bổ sung của vault "06 - Java Program" phần Java Core.

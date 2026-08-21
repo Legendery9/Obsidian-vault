@@ -89,26 +89,43 @@ try {
 
 ## 5. Sử dụng chú thích mã nguồn (comments)
 - **Ngôn ngữ:** tiếng việt.
+- **Mục tiêu:** Comments phải ngắn gọn, rõ ràng và tập trung vào mục đích, logic hoặc lý do cần thiết của đoạn code.
 - **Tại các vị trí:**
-	- Trước `header` của tất cả các `class` (Trừ `constructor`, `getter` và `setter`), luôn chú thích: 
-		- Tên class: `{Class Name}`.
-		- Phiên bản:  `{Phiên bản Java}`
-		- Date tạo class: ` Date of code` 
-		- Latest: `{Latest Date}`.
-		- Bản quyền: `{Tên người dùng}`.
-		- mã sinh viên: `{HE\d{6}$}`.
-		- Mục đích: `{Mục đích file}`.
-	- Statement gọi `hàm`.
-	- Statement có `điều kiện rẽ nhánh`
-- **Sử dụng các ký tự đặc biệt:**
+	- Trước `header` của tất cả các `class`, sử dụng Javadoc comment: 
+		- Tên class: `@Class: {Class Name}`.
+			- Tên đầy đủ của class.
+		- Phiên bản từng class:  `@Version:{MAJOR}.{MINOR}.{PATCH}`.
+			- Tuân thủ quy tắc Semantic Versioning của project.
+		- Date tạo class: `@Date: {Date of code}` (dd-MMM-uuuu).
+		- Lần chỉnh sửa gần đây nhất: `@Latest: {Latest Date}` (dd-MMM-uuuu).
+		- Bản quyền: `@Author: {Tên người dùng}`.
+			- Mặc định: [[01 - Account information]].
+		- mã tác giả: `Code: {HE\d{6}$}`.
+			- Mặc định: [[01 - Account information]].
+		- Mục đích: `@Purpose: {Mục đích file}`.
+			- Mô tả ngắn gọn mục đích của class/file.
+	- Trước `header` của tất cả `method`, sử dụng lần lượt theo thứ tự:
+		- Sử dụng Javadoc comment có:
+			- `@param`: tham số đầu vào nếu method có tham số.
+			- `@return`: kiểu dữ liệu và ý nghĩa giá trị trả về nếu method có giá trị trả về.
+			- Không sử dụng khi có có giá trị chuyền và không có kiểu trả về.
+		- Sử dụng Single-line comment giải thích mục đích của `method` đối với yêu cầu dự án.
+		- Ngoại lệ: không áp dụng cho `constructor`, `getter` và `setter`.
+	- Statement gọi `hàm`**:** chú thích mục đích của lời gọi hàm khi cần thiết.
+	- Statement là `điều kiện rẽ nhánh`: chú thích điều kiện hoặc mục đích của nhánh khi logic không hiển nhiên.
+	- Statement có sử dụng `Lambda`, `Stream`, `Collection`, `System`, `File IO`, và `Comparator`.
+	- Statement là `loop`.
+	- Statement là `biến` tạm thời.
+- **Không chú thích dư thừa:** Không comment những đoạn code đã quá rõ nghĩa từ tên biến, tên hàm hoặc cấu trúc code.
+- **Sử dụng các Marker đặc biệt:**
 
-| Marker   | Ý nghĩa               | Code::Blocks    |
-| -------- | --------------------- | --------------- |
-| TODO     | Việc cần làm          | ✅               |
-| FIXME    | Cần sửa lỗi           | ✅               |
-| XXX      | Đáng nghi/cần xem lại | ✅               |
-| NOTE     | Ghi chú               | ⚠️ tùy cấu hình |
-| HACK     | Code workaround       | ⚠️ tùy cấu hình |
-| BUG      | Lỗi đã biết           | ⚠️ tùy cấu hình |
-| WARNING  | Cảnh báo              | ⚠️ tùy cấu hình |
-| OPTIMIZE | Cần tối ưu            | ⚠️ tùy cấu hình |
+| Marker     | Ý nghĩa                         |  Code::Blocks   |  IntelliJ IDEA  |
+| ---------- | ------------------------------- | :-------------: | :-------------: |
+| `TODO`     | Việc cần làm                    |        ✅        |        ✅        |
+| `FIXME`    | Cần sửa lỗi                     |        ✅        |        ✅        |
+| `XXX`      | Đáng nghi / cần xem lại         |        ✅        |       ⚠️        |
+| `NOTE`     | Ghi chú                         | ⚠️ Tùy cấu hình | ⚠️ Tùy cấu hình |
+| `HACK`     | Code workaround / giải pháp tạm | ⚠️ Tùy cấu hình | ⚠️ Tùy cấu hình |
+| `BUG`      | Lỗi đã biết                     | ⚠️ Tùy cấu hình | ⚠️ Tùy cấu hình |
+| `WARNING`  | Cảnh báo                        | ⚠️ Tùy cấu hình | ⚠️ Tùy cấu hình |
+| `OPTIMIZE` | Cần tối ưu                      | ⚠️ Tùy cấu hình | ⚠️ Tùy cấu hình |
