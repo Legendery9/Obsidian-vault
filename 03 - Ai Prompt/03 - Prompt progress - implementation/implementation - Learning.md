@@ -4,6 +4,7 @@
 - [x] Hoàn thiện nội dung theo 20/80 cho toàn bộ file ✅ 2026-08-19
 - [x] Tạo folder `04 - Architectural Patterns` trong `10 - Learning` ✅ 2026-08-22
 - [x] Tạo file: MVC ✅ 2026-08-22
+- [x] Thêm file MVC mở rộng (MVC + Service Layer + DTO + Utility + Entry Point) sau file MVC ✅ 2026-08-22
 - [x] Tạo file: MVVM ✅ 2026-08-22
 - [x] Tạo file: Layered / N-Tier ✅ 2026-08-22
 - [x] Tạo file: Clean Architecture ✅ 2026-08-22
@@ -24,6 +25,12 @@
 - **Header nguồn tham khảo:** Ghi nhận nguồn gốc tin cậy ở đầu mỗi file mới.
 
 ## Nhật ký thay đổi
+
+### [2026-08-22 08:35]
+- **Đã làm:**
+  - Tạo mới và hoàn thiện nội dung `06 - MVC Service Layer DTO Architecture.md` (MVC mở rộng) với đầy đủ các phần mô tả, so sánh bảng biểu và sơ đồ Mermaid mô tả luồng đi của dữ liệu.
+  - Thực hiện đổi tên dịch chỉ mục (shifting indices) cho 7 file pattern còn lại: `06 - MVVM.md` $\rightarrow$ `07 - MVVM.md`, ..., `12 - Microservices.md` $\rightarrow$ `13 - Microservices.md`.
+  - Cập nhật lại toàn bộ các wikilinks trong các file liên quan để tránh liên kết gãy sau khi đổi tên (`03 - Monolithic.md`, `04 - Layered Architecture.md`, `05 - MVC.md`, `09 - Hexagonal Architecture.md`, `10 - Clean Architecture.md`, `11 - Event-Driven.md`, `12 - CQRS.md`).
 
 ### [2026-08-22 00:16]
 - **Đã làm:**

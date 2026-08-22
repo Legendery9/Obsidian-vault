@@ -1,5 +1,8 @@
 # Quy tắc áp dụng chung
 
+> [!note] Quy tắc chung
+> Trước khi áp dụng các quy tắc này, hãy đọc bộ quy tắc chung tại [[01 - General Prompt Rules]].
+
 > [!important]  
 > **Phạm vi áp dụng:** Các quy tắc dưới đây luôn được áp dụng khi làm việc với Obsidian cho đến khi người dùng trực tiếp yêu cầu thay đổi hoặc hủy bỏ.
 
@@ -32,7 +35,7 @@
 ---
 
 ## 3. Nguyên tắc 20/80
-Tập trung vào **20% kiến thức cốt lõi mang lại 80% giá trị**.
+Tập trung vào **20% kiến thức cốt lõi mang lại 80% giá trị**. ^rule-20-80
 - Ưu tiên kiến thức thường xuyên sử dụng.
 - Loại bỏ thông tin dư thừa, trùng lặp hoặc ít giá trị.
 - Không mở rộng quá sâu nếu không phục vụ mục đích thực tế.
@@ -46,7 +49,7 @@ Tập trung vào **20% kiến thức cốt lõi mang lại 80% giá trị**.
 ---
 
 ## 4. Visual Formatting
-- Tuân thủ đầy đủ quy tắc định dạng được quy định tại [[02 - Obsidian format OPTIMIZATION]].
+- Tuân thủ đầy đủ quy tắc định dạng được quy định tại [[03 - Obsidian format OPTIMIZATION]].
 - Phân tách các heading lớn bằng `---`.
 - Sử dụng callout phù hợp:
 ```markdown
@@ -358,6 +361,27 @@ Dùng làm nguồn tra cứu ưu tiên cho người dùng, người đọc, và 
 | [WHO](https://www.who.int/) | Thông tin chính thức y tế, sức khỏe |
 | [IMF](https://www.imf.org/) | Thông tin kinh tế, tài chính quốc tế |
 | [OECD](https://www.oecd.org/) | Dữ liệu, nghiên cứu, chính sách kinh tế - xã hội |
+
+---
+
+## 12. Xử lý nội dung sai vị trí / không khớp chủ đề
+Nếu được yêu cầu chỉnh sửa hoặc thêm nội dung mà **không khớp hoặc không phù hợp** với chủ đề của file `.md` đó (căn cứ theo tên file/tiêu đề) — ví dụ: file hướng dẫn dùng MySQL nhưng lại chứa hướng dẫn câu lệnh `if` của Java — thì thực hiện các bước sau:
+- **Sửa lại, xoá, hoặc di chuyển** phần nội dung không phù hợp đó đến đúng file `.md` khác phù hợp hơn (tạo file mới nếu chưa có nơi chứa phù hợp, theo đúng quy tắc tổ chức đã có).
+- **Không cần xác thực lại từ người dùng** trước khi làm việc này — **trừ khi** nội dung đó đã được người dùng **đánh dấu là QUAN TRỌNG** trước đó (thì phải hỏi xác thực yes/no theo đúng quy tắc ở [[01 - General Prompt Rules#1. Cách hỏi câu hỏi xác thực và uỷ quyền từ người dùng|Quy tắc xác thực và uỷ quyền]] trước khi sửa/xoá/di chuyển).
+
+---
+
+## 13. Quy trình xử lý khi được báo lỗi tại vị trí cụ thể
+Khi được người dùng hoặc bên thứ 3 bất kỳ thông báo có lỗi tại một vị trí cụ thể, phải **ghi log và tiến hành sửa lỗi** tại đúng vị trí được báo. Cần phân biệt và xử lý theo 2 loại lỗi sau:
+
+### a) Lỗi định dạng (Obsidian format)
+- Ghi lại lỗi vào file `implementation` tương ứng với folder chứa file bị lỗi, kèm **quá trình sửa lại và cách sửa**.
+- Cập nhật thêm vào [[03 - Obsidian format OPTIMIZATION]] hoặc folder `02 - Obsidian context`: mô tả **lỗi gặp phải, cách sửa, và lưu ý** để tránh lặp lại lỗi tương tự trong tương lai.
+- Trường hợp người dùng **tự sửa** (không nhờ AI sửa) $\rightarrow$ không cần ghi log quá trình sửa.
+
+### b) Lỗi nội dung văn bản (sai kiến thức, thông tin...)
+- Ghi lại lỗi vào file `implementation` tương ứng với folder chứa file bị lỗi, kèm **quá trình sửa lại và cách sửa**.
+- Khi tiến hành sửa đổi, bắt buộc phải **tham khảo lại** danh sách nguồn đáng tin cậy đã được quy định tại [[02 - Rules for working with Obsidian folders and notes#11. Bảng danh sách website đáng tin cậy|Bảng danh sách website đáng tin cậy]] (sử dụng đúng nguồn uy tín và chính thống).
 
 ---
 

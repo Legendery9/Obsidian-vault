@@ -71,7 +71,7 @@ graph TD
 
 Để hiểu rõ hơn về các kiến trúc phân tách Concerns này, dưới đây là bảng so sánh chi tiết điểm khác biệt cốt lõi:
 
-| Tiêu chí so sánh | Layered Architecture `[[04 - Layered Architecture]]` | Hexagonal Architecture `[[08 - Hexagonal Architecture]]` | Clean Architecture |
+| Tiêu chí so sánh | Layered Architecture `[[04 - Layered Architecture]]` | Hexagonal Architecture `[[09 - Hexagonal Architecture]]` | Clean Architecture |
 | :--- | :--- | :--- | :--- |
 | **Hướng phụ thuộc (Dependency Direction)** | Từ trên xuống dưới (Top-Down). Nghiệp vụ phụ thuộc trực tiếp vào Database. | Từ ngoài vào trong (Inward). Mọi thứ phụ thuộc vào Core Domain. | Từ ngoài vào trong (Inward). Đi theo các vòng tròn đồng tâm vào Entities. |
 | **Tâm điểm hệ thống (System Center)** | **Database-Centric** (Tập trung vào cấu trúc cơ sở dữ liệu vật lý). | **Domain-Centric** (Tập trung vào logic nghiệp vụ và các Ports). | **Domain-Centric** (Tập trung vào Entities và Use Cases độc lập). |
@@ -118,5 +118,5 @@ Mô phỏng luồng đăng ký tài khoản (Register User):
 
 ## Lưu ý
 
-- **Sự nhầm lẫn với Hexagonal Architecture:** Thực chất, Clean Architecture là một phiên bản chi tiết hóa và chuẩn hóa hơn của `[[08 - Hexagonal Architecture]]`. Ports trong Hexagonal tương ứng với Gateways/Interfaces ở lớp Use Cases của Clean Architecture. Adapters tương ứng với Interface Adapters ở vòng tròn thứ 3.
+- **Sự nhầm lẫn với Hexagonal Architecture:** Thực chất, Clean Architecture là một phiên bản chi tiết hóa và chuẩn hóa hơn của `[[09 - Hexagonal Architecture]]`. Ports trong Hexagonal tương ứng với Gateways/Interfaces ở lớp Use Cases của Clean Architecture. Adapters tương ứng với Interface Adapters ở vòng tròn thứ 3.
 - **Dependency Inversion (DIP):** Để giữ cho chiều phụ thuộc luôn hướng vào trong khi Use Case cần gọi Database để lưu dữ liệu, Use Case định nghĩa một Interface (ví dụ: `UserRepositoryGateway` ở vòng trong). Lớp Database triển khai Interface này ở vòng ngoài. Nhờ đó, dòng điều khiển (Flow of Control) đi từ Use Case ra Database, nhưng dòng phụ thuộc (Flow of Dependency) lại đi ngược từ Database vào Use Case.

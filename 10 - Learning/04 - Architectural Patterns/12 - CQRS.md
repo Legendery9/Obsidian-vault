@@ -77,7 +77,7 @@ graph TD
 
 - Các hệ thống thương mại điện tử lớn có tần suất đọc dữ liệu (xem sản phẩm, tìm kiếm) lớn hơn rất nhiều so với ghi dữ liệu (đặt hàng).
 - Hệ thống có logic nghiệp vụ ghi dữ liệu cực kỳ phức tạp (phải check nhiều điều kiện), còn nghiệp vụ đọc lại cần dữ liệu tổng hợp từ nhiều nguồn khác nhau.
-- Khi xây dựng kiến trúc Microservices phân tán (`[[12 - Microservices]]`).
+- Khi xây dựng kiến trúc Microservices phân tán (`[[13 - Microservices]]`).
 - Thường kết hợp với **Event Sourcing Pattern** (lưu trữ toàn bộ lịch sử sự kiện thay vì trạng thái hiện tại).
 
 ---
@@ -107,5 +107,5 @@ Mô tả lớp xử lý trong một ứng dụng Spring Boot:
 ## Lưu ý
 
 - **Liên hệ với Event-Driven:**
-  - CQRS rất hay đi đôi với `[[10 - Event-Driven]]` để giải quyết bài toán đồng bộ dữ liệu. Nhánh Ghi sau khi hoàn thành nhiệm vụ sẽ đẩy event vào Message Broker để Nhánh Đọc cập nhật.
+  - CQRS rất hay đi đôi với `[[11 - Event-Driven]]` để giải quyết bài toán đồng bộ dữ liệu. Nhánh Ghi sau khi hoàn thành nhiệm vụ sẽ đẩy event vào Message Broker để Nhánh Đọc cập nhật.
 - **Không áp dụng bừa bãi:** CQRS không phải là một kiến trúc tổng thể (Global Architecture) cho toàn bộ ứng dụng. Chỉ áp dụng CQRS cho những **Bounded Context** (phân vùng nghiệp vụ) thực sự gặp bài toán về hiệu năng đọc/ghi hoặc có nghiệp vụ quá phức tạp. Đừng cố áp dụng cho các module CRUD đơn giản.

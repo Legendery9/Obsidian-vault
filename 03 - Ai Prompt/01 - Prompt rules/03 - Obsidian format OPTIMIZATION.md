@@ -126,6 +126,34 @@ Không đặt display equation trên cùng một dòng với văn bản.
   - `[...]` → text hiển thị cho người đọc.
   - `(...)` → địa chỉ đích (URL hoặc đường dẫn).
 
+### 6.3. Block Reference
+Cú pháp tổng quát:
+`[[{fileMdName}#{target}|{displayText}]]`
+với `{target} = {heading}` hoặc `^{blockId}`.
+
+**a) Link đến 1 block cụ thể (không phải heading):**
+- Tại block muốn được link tới, đặt `^{id}` ở cuối block đó để gán block ID.
+- Từ file khác, link tới block đó bằng: `[[{fileMdName}#^{id}]]`
+- Muốn hiển thị đẹp hơn (đổi tên hiển thị): `[[{fileMdName}#^{id}|{replaceContext}]]`
+
+| Thành phần | Ý nghĩa |
+|---|---|
+| `{fileMdName}` | Tên file `.md` đích |
+| `#` | Ký tự phân cách giữa tên file và vị trí bên trong file |
+| `^{id}` | Block ID của block cần trỏ tới |
+| `\|` | Ký tự phân cách giữa đích liên kết và tên hiển thị |
+| `{replaceContext}` | Nội dung hiển thị thay cho tên file/block gốc |
+
+**b) Link đến 1 Heading:**
+- Cú pháp: `[[{fileMdName}#{target}]]`
+- Muốn đẹp hơn (đổi tên hiển thị): `[[{fileMdName}#{heading}|{displayText}]]`
+
+- **Ưu tiên dùng Block Reference** (thay vì chỉ link tới cả file hoặc chỉ tới heading) khi cần trỏ chính xác tới **1 đoạn/1 dòng cụ thể** trong file khác — tránh người đọc phải tự tìm trong toàn bộ file.
+
+Ví dụ:
+- Link đến Heading: `[[02 - Rules for working with Obsidian folders and notes#11. Bảng danh sách website đáng tin cậy|Danh sách website đáng tin cậy]]`
+- Link đến Block: `[[02 - Rules for working with Obsidian folders and notes#^rule-20-80|Nguyên tắc 20/80]]`
+
 ## 7. Obsidian & Plugins
 - Agent **được phép tự do sử dụng** mọi tính năng định dạng của Obsidian và các plugin đang có, miễn thông tin/tài liệu về tính năng đó đã có sẵn tại folder:
   `Obsidian-vault/02 - Obsidian context`

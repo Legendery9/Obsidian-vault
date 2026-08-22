@@ -75,5 +75,5 @@ Một ứng dụng thương mại điện tử nguyên khối (E-commerce Monoli
 
 ## Lưu ý
 
-- **So sánh với Microservices:** Monolithic và `[[12 - Microservices]]` là hai thái cực đối lập trong thiết kế hệ thống. Trong khi Monolithic gộp tất cả vào một nơi để đơn giản hóa, Microservices lại chia nhỏ thành các dịch vụ độc lập để dễ scale và phát triển song song nhưng phải chấp nhận độ phức tạp cao về quản trị hạ tầng mạng.
+- **So sánh với Microservices:** Monolithic và `[[13 - Microservices]]` là hai thái cực đối lập trong thiết kế hệ thống. Trong khi Monolithic gộp tất cả vào một nơi để đơn giản hóa, Microservices lại chia nhỏ thành các dịch vụ độc lập để dễ scale và phát triển song song nhưng phải chấp nhận độ phức tạp cao về quản trị hạ tầng mạng.
 - **Monolith không phải là "Bad Practice":** Nhiều hệ thống lớn (như Shopify, Basecamp) vẫn chạy trên kiến trúc Monolithic được thiết kế tốt (Modular Monolith) để tận dụng hiệu năng và sự đơn giản thay vì chuyển sang Microservices vô tội vạ.

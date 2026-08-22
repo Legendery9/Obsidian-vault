@@ -134,5 +134,5 @@ Mã nguồn Java mô tả cấu trúc của chức năng tạo đơn hàng:
 - **So sánh với Layered Architecture:** 
   - Khác biệt cốt lõi nằm ở **nguyên tắc đảo ngược phụ thuộc**. Trong `[[04 - Layered Architecture]]`, tầng nghiệp vụ phụ thuộc trực tiếp vào tầng dữ liệu. Trong Hexagonal, cả hai đều phụ thuộc vào Core Domain (thông qua interface Outbound Port).
 - **So sánh với Clean Architecture:** 
-  - `[[09 - Clean Architecture]]` (Kiến trúc sạch) và Hexagonal Architecture thực chất có chung một tư duy gốc: đặt Domain làm trung tâm và bảo vệ nó khỏi các công nghệ bên ngoài. Clean Architecture phân chia các lớp hình tròn đồng tâm rõ ràng hơn và chi tiết hơn (Entities, Use Cases, Controllers, Gateways) so với mô hình Ports-Adapters.
+  - `[[10 - Clean Architecture]]` (Kiến trúc sạch) và Hexagonal Architecture thực chất có chung một tư duy gốc: đặt Domain làm trung tâm và bảo vệ nó khỏi các công nghệ bên ngoài. Clean Architecture phân chia các lớp hình tròn đồng tâm rõ ràng hơn và chi tiết hơn (Entities, Use Cases, Controllers, Gateways) so với mô hình Ports-Adapters.
 - **Ranh giới module:** Đừng để các thư viện bên ngoài (như Spring, Hibernate, JPA annotations) rò rỉ vào trong Core Domain. Core Domain chỉ nên chứa mã nguồn Java/Kotlin/C# thuần túy.

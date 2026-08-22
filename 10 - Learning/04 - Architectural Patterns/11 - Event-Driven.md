@@ -74,10 +74,10 @@ graph TD
 
 ## Khi nào nên dùng
 
-- Các hệ thống phân tán lớn, đa dịch vụ (`[[12 - Microservices]]`).
+- Các hệ thống phân tán lớn, đa dịch vụ (`[[13 - Microservices]]`).
 - Ứng dụng xử lý dữ liệu thời gian thực (Real-time Data Processing) như phân tích tài chính, theo dõi hành trình xe (Grab/Uber), thiết bị IoT.
 - Khi cần tách biệt các tác vụ tốn thời gian khỏi luồng tương tác chính của người dùng (ví dụ: tạo file PDF báo cáo, gửi email xác nhận).
-- Khi kết hợp với mô hình `[[11 - CQRS]]` để đồng bộ hóa dữ liệu giữa các database đọc và ghi.
+- Khi kết hợp với mô hình `[[12 - CQRS]]` để đồng bộ hóa dữ liệu giữa các database đọc và ghi.
 
 ---
 

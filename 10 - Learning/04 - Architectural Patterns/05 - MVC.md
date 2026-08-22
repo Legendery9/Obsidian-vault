@@ -84,5 +84,5 @@ Một ứng dụng xem thông tin sản phẩm viết bằng Spring Boot MVC:
 
 - **So sánh MVC vs MVVM:**
   - Trong MVC, Controller điều phối trực tiếp luồng dữ liệu và quyết định View nào được hiển thị. View và Model có thể có liên kết gián tiếp hoặc trực tiếp tùy biến thể.
-  - Trong `[[06 - MVVM]]` (Model-View-ViewModel), thành phần Controller được thay thế bằng **ViewModel**. Giữa View và ViewModel có cơ chế **Data Binding** tự động (2-way data binding). ViewModel không hề biết về View, giúp tăng cường khả năng viết Unit Test độc lập cho UI logic.
+  - Trong `[[07 - MVVM]]` (Model-View-ViewModel), thành phần Controller được thay thế bằng **ViewModel**. Giữa View và ViewModel có cơ chế **Data Binding** tự động (2-way data binding). ViewModel không hề biết về View, giúp tăng cường khả năng viết Unit Test độc lập cho UI logic.
 - **Mã nguồn sạch:** Tránh đưa logic nghiệp vụ (như tính toán, kiểm tra nghiệp vụ phức tạp) vào Controller. Hãy áp dụng nguyên tắc *"Thin Controller, Fat Model"* hoặc chuyển logic nghiệp vụ sang một lớp Service riêng biệt.

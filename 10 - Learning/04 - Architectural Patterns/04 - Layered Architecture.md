@@ -94,7 +94,7 @@ com.university.studentmanagement
 
 - **So sánh với Clean/Hexagonal Architecture:** 
   - Trong Layered Architecture, toàn bộ hệ thống bị phụ thuộc vào **Database Layer** nằm ở dưới cùng. Nếu thay đổi công nghệ Database (ví dụ từ MySQL sang MongoDB), toàn bộ các lớp phía trên đều bị ảnh hưởng.
-  - Trong `[[08 - Hexagonal Architecture]]` và `[[09 - Clean Architecture]]`, nguyên tắc **Dependency Inversion** được áp dụng triệt để. Logic nghiệp vụ (Domain) đặt ở trung tâm và không phụ thuộc vào bất kỳ công nghệ bên ngoài nào (Database, UI, Network). Chúng đều phụ thuộc vào Core Domain thông qua các *Ports / Interfaces*.
+  - Trong `[[09 - Hexagonal Architecture]]` và `[[10 - Clean Architecture]]`, nguyên tắc **Dependency Inversion** được áp dụng triệt để. Logic nghiệp vụ (Domain) đặt ở trung tâm và không phụ thuộc vào bất kỳ công nghệ bên ngoài nào (Database, UI, Network). Chúng đều phụ thuộc vào Core Domain thông qua các *Ports / Interfaces*.
 - **Phân biệt Lớp (Layer) vs Tầng vật lý (Tier):** 
   - *Layer* là sự phân chia logic mã nguồn trong cùng một phần mềm (chạy chung tiến trình).
   - *Tier* là sự phân chia vật lý trên các máy chủ khác nhau (ví dụ: client-tier chạy ở browser, web-tier chạy ở server 1, db-tier chạy ở server 2).

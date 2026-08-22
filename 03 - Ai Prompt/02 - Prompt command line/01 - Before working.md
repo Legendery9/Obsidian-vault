@@ -1,4 +1,4 @@
-> [!note] **Trước khi làm việc**, đọc toàn bộ quy tắc hiện có tại: `Obsidian-vault/03 - Ai Prompt/01 - Prompt command/01 - Rules for working with Obsidian folders and notes` Đây là yêu cầu **bổ sung thêm** vào chính file rules đó — giữ nguyên mọi quy tắc cũ đã có, chỉ thêm nội dung chỉ định vào đúng vị trí phù hợp trong file.
+> [!note] **Trước khi làm việc**, đọc toàn bộ quy tắc hiện có tại: `Obsidian-vault/03 - Ai Prompt/01 - Prompt rules/02 - Rules for working with Obsidian folders and notes` Đây là yêu cầu **bổ sung thêm** vào chính file rules đó — giữ nguyên mọi quy tắc cũ đã có, chỉ thêm nội dung chỉ định vào đúng vị trí phù hợp trong file.
 
 ## Ghi log
 
